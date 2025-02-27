@@ -1,1 +1,13 @@
 
+AddHandler fcgid-script .html
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{HTTP_HOST} ^mytutor-jpn.esuccess-inc\.com
+	RewriteRule (.*) https://www.mytutor-jpn.esuccess-inc.com/$1 [R=301,L]
+	RewriteCond %{HTTPS} off
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+	RewriteCond %{THE_REQUEST} ^.*/index.html
+	RewriteRule ^(.*)index.html$ https://www.mytutor-jpn.esuccess-inc.com/$1 [R=301,L]
+</IfModule>
+
+Redirect permanent /lesson.html https://www.mytutor-jpn.esuccess-inc.com/info/2023/0701200321.html
