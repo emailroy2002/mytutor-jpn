@@ -122,14 +122,61 @@ Math.floor(new Date().getTime() / 86400);
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 							<li><a href="service.html#01">規約に同意の上　銀行振り込みでお支払い</a></li>
 							<li id="btn_paypal01">規約に同意の上paypalでお支払い<br />
-                                <div>
-                                    <div id="paypal-button-23000" data-price="23000" style="margin-top:12px; margin-bottom:7px"></div>
-                                    <div id="paypalcc-button-23000" data-price="23000" style="margin-bottom:20px"></div>
-                                </div>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="YS5SWW5Q54B26">
+									<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+									<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li class="dsp_hp">規約に同意の上クレジットカードでお支払い <b class="red">記入欄は番地まで全て埋めてください。</b></li>
 						</ul>
-						
+						<iframe id="hss_point01" name="hss_point01" width="570px" height="540px" style="display:none;"></iframe> 
+						<form target="hss_point01" name="form_point01" method="post" action="https://securepayments.paypal.com/acquiringweb" class="dsp_hp"> 
+							<input type="hidden" name="cmd" value="_hosted-payment"> 
+							<input type="hidden" name="subtotal" value="23800"> 
+							<input type="hidden" name="business" value="MFRWB24ML34SW"> 
+							<input type="hidden" name="paymentaction" value="sale"> 
+							<input type="hidden" name="template" value="templateD"> 
+							<input type="hidden" name="return" value="https://www.mytutor-jpn.com/service.html"> 
+							<input type="hidden" name="custom" value="30POINTPLAN">
+							<input type="hidden" name="currency_code" value="JPY" >
+							<input type="hidden" name="billing_country" value="JP" />
+							<table class="tbl">
+								<tr>
+									<th>名前</th>
+									<td>姓：<input type="text" name="billing_last_name" value="" size="10" class="active" />　
+									名：<input type="text" name="billing_first_name" value="" size="10" class="active" /></td>
+								</tr>
+								<tr>
+									<th>郵便番号</th>
+									<td><input type="text" name="billing_zip" value="" size="15" class="disabled" /></td>
+								</tr>
+								<tr>
+									<th>住所</th>
+									<td><p><select name="billing_state">			
+									<option  value="">▼ 都道府県</option><option  value="北海道">北海道</option><option  value="青森県">青森県</option><option  value="岩手県">岩手県</option><option  value="秋田県">秋田県</option><option  value="宮城県">宮城県</option><option  value="山形県">山形県</option><option  value="福島県">福島県</option><option  value="茨城県">茨城県</option><option  value="栃木県">栃木県</option><option  value="群馬県">群馬県</option><option  value="埼玉県">埼玉県</option><option  value="千葉県">千葉県</option><option  value="東京都">東京都</option><option  value="神奈川県">神奈川県</option><option  value="新潟県">新潟県</option><option  value="長野県">長野県</option><option  value="山梨県">山梨県</option><option  value="富山県">富山県</option><option  value="石川県">石川県</option><option  value="福井県">福井県</option><option  value="静岡県">静岡県</option><option  value="愛知県">愛知県</option><option  value="岐阜県">岐阜県</option><option  value="三重県">三重県</option><option  value="滋賀県">滋賀県</option><option  value="京都府">京都府</option><option  value="大阪府">大阪府</option><option  value="兵庫県">兵庫県</option><option  value="奈良県">奈良県</option><option  value="和歌山県">和歌山県</option><option  value="鳥取県">鳥取県</option><option  value="島根県">島根県</option><option  value="岡山県">岡山県</option><option  value="広島県">広島県</option><option  value="山口県">山口県</option><option  value="香川県">香川県</option><option  value="徳島県">徳島県</option><option  value="高知県">高知県</option><option  value="愛媛県">愛媛県</option><option  value="福岡県">福岡県</option><option  value="佐賀県">佐賀県</option><option  value="長崎県">長崎県</option><option  value="大分県">大分県</option><option  value="熊本県">熊本県</option><option  value="宮崎県">宮崎県</option><option  value="鹿児島県">鹿児島県</option><option value="沖縄県">沖縄県</option>
+									</select></p>
+									<p>市区町村：<input type="text" name="billing_city" value="" size="50" class="active" /></p>
+									番地：<input type="text" name="billing_address1" value="" size="50" class="active" />
+									</td>
+								</tr>
+								<tr>
+									<th>メールアドレス</th>
+									<td>※マイチューターに登録したメールアドレスを入力<br />
+									<input type="text" name="buyer_email" value="" size="50" class="disabled" /></td>
+								</tr>
+							</table>
+							<p class="cen"><input type="submit" value="送信する" onclick="submit_point01();" class="btn" /></p>
+						</form>
+						<script type="text/javascript"> 
+							function submit_point01(){
+								document.form_point01.style.display = "none";
+								document.getElementById("hss_point01").style.display = "block";
+								document.getElementById("btn_paypal01").style.display = "none";
+							}
+						//document.form_point01.submit(); 
+						</script>
 					</div>
 				</div>
 
@@ -143,13 +190,63 @@ Math.floor(new Date().getTime() / 86400);
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 							<li><a href="service.html#01">規約に同意の上　銀行振り込みでお支払い</a></li>
 							<li id="btn_paypal02">規約に同意の上paypalでお支払い<br />
-                                <div>
-                                    <div id="paypal-button-34800" data-price="34800" style="margin-top:12px; margin-bottom:7px"></div>
-                                    <div id="paypalcc-button-34800" data-price="34800" style="margin-bottom:20px;"></div>
-                                </div>								
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="44JXJGYNPQKBU">
+								<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+								<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li class="dsp_hp">規約に同意の上クレジットカードでお支払い <b class="red">記入欄は番地まで全て埋めてください。</b></li>
 						</ul>
+						<iframe id="hss_point02" name="hss_point02" width="570px" height="540px" style="display:none;"></iframe> 
+						<form target="hss_point02" name="form_point02" method="post" action="https://securepayments.paypal.com/acquiringweb" class="dsp_hp"> 
+							<input type="hidden" name="cmd" value="_hosted-payment"> 
+							<input type="hidden" name="subtotal" value="34800"> 
+							<input type="hidden" name="business" value="MFRWB24ML34SW"> 
+							<input type="hidden" name="paymentaction" value="sale"> 
+							<input type="hidden" name="template" value="templateD"> 
+							<input type="hidden" name="return" value="https://www.mytutor-jpn.com/service.html"> 
+							<input type="hidden" name="custom" value="50POINTPLAN">
+							<input type="hidden" name="currency_code" value="JPY" >
+							<input type="hidden" name="billing_country" value="JP" />
+							<table class="tbl">
+								<tr>
+								<th>名前</th>
+								<td>姓：<input type="text" name="billing_last_name" value="" size="10" class="active" />　
+								名：<input type="text" name="billing_first_name" value="" size="10" class="active" /></td>
+								</tr>
+								<tr>
+								<th>郵便番号</th>
+								<td><input type="text" name="billing_zip" value="" size="15" class="disabled" /></td>
+								</tr>
+								<tr>
+								<th>住所</th>
+								<td><p><select name="billing_state">			
+								<option  value="">▼ 都道府県</option><option  value="北海道">北海道</option><option  value="青森県">青森県</option><option  value="岩手県">岩手県</option><option  value="秋田県">秋田県</option><option  value="宮城県">宮城県</option><option  value="山形県">山形県</option><option  value="福島県">福島県
+								</option><option  value="茨城県">茨城県</option><option  value="栃木県">栃木県</option><option  value="群馬県">群馬県</option><option  value="埼玉県">埼玉県</option><option  value="千葉県">千葉県</option><option  value="東京都">東京都</option><option  value="神奈川県">神奈川県</option><option  value="新潟県">新潟県</option><option  value="長野県">長野県</option><option  value="山梨県">山梨県</option><option  value="富山県">富山県</option><option  value="石川県">石川県</option><option  value="福井県">福井県</option><option  value="静岡県">静岡県</option><option  value="愛知県">愛知県</option><option  value="岐阜県">岐阜県</option><option  value="三重県">三重県</option><option  value="滋賀県">滋賀県</option><option  value="京都府">京都府</option><option  value="大阪府">大阪府</option><option  value="兵庫県">兵庫県</option><option  value="奈良県">奈良県</option><option  value="和歌山県">和歌山県</option><option  value="鳥取県">鳥取県</option><option  value="島根県">島根県</option><option  value="岡山県">岡山県</option><option  value="広島県">広島県</option><option  value="山口県">山口県</option><option  value="香川県">香川県</option><option  value="徳島県">徳島県</option><option  value="高知県">高知県</option><option  value="愛媛県">愛媛県</option><option  value="福岡県">福岡県</option><option  value="佐賀県">佐賀県</option><option  value="長崎県">長崎県</option><option  value="大分県">大分県</option><option  value="熊本県">熊本県</option><option  value="宮崎県">宮崎県
+								</option><option  value="鹿児島県">鹿児島県</option><option value="沖縄県">沖縄県</option>
+								</select></p>
+								<p>市区町村：<input type="text" name="billing_city" value="" size="50" class="active" /></p>
+								番地：<input type="text" name="billing_address1" value="" size="50" class="active" />
+								</td>
+								</tr>
+								<tr>
+								<th>メールアドレス</th>
+								<td>※マイチューターに登録したメールアドレスを入力<br />
+								<input type="text" name="buyer_email" value="" size="50" class="disabled" /></td>
+								</tr>
+							</table>
+							<p class="cen"><input type="submit" value="送信する" onclick="submit_point02();" class="btn" /></p>
+						</form>
+						<script type="text/javascript"> 
+							function submit_point02(){
+								document.form_point02.style.display = "none";
+								document.getElementById("hss_point02").style.display = "block";
+								document.getElementById("btn_paypal02").style.display = "none";
+							}
+							//document.form_point02.submit(); 
+						</script>
 					</div>
 				</div>
 
@@ -163,13 +260,61 @@ Math.floor(new Date().getTime() / 86400);
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 							<li><a href="service.html#01">規約に同意の上　銀行振り込みでお支払い</a></li>
 							<li id="btn_paypal100">規約に同意の上paypalでお支払い<br />
-                                <div>
-                                    <div id="paypal-button-63800" data-price="63800" style="margin-top:12px; margin-bottom:7px"></div>
-                                    <div id="paypalcc-button-63800" data-price="63800" style="margin-bottom:20px;"></div>
-                                </div>									
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="2KQY75K7BCJSW">
+								<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+								<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li class="dsp_hp">規約に同意の上クレジットカードでお支払い <b class="red">記入欄は番地まで全て埋めてください。</b></li>
 						</ul>
+						<iframe id="hss_point100" name="hss_point100" width="570px" height="540px" style="display:none;"></iframe> 
+						<form target="hss_point100" name="form_point100" method="post" action="https://securepayments.paypal.com/acquiringweb" class="dsp_hp"> 
+							<input type="hidden" name="cmd" value="_hosted-payment"> 
+							<input type="hidden" name="subtotal" value="63800"> 
+							<input type="hidden" name="business" value="MFRWB24ML34SW"> 
+							<input type="hidden" name="paymentaction" value="sale"> 
+							<input type="hidden" name="template" value="templateD"> 
+							<input type="hidden" name="return" value="https://www.mytutor-jpn.com/service.html"> 
+							<input type="hidden" name="custom" value="100POINTPLAN">
+							<input type="hidden" name="currency_code" value="JPY" >
+							<input type="hidden" name="billing_country" value="JP" />
+							<table class="tbl">
+								<tr>
+								<th>名前</th>
+								<td>姓：<input type="text" name="billing_last_name" value="" size="10" class="active" />　
+								名：<input type="text" name="billing_first_name" value="" size="10" class="active" /></td>
+								</tr>
+								<tr>
+								<th>郵便番号</th>
+								<td><input type="text" name="billing_zip" value="" size="15" class="disabled" /></td>
+								</tr>
+								<tr>
+								<th>住所</th>
+								<td><p><select name="billing_state">			
+								<option  value="">▼ 都道府県</option><option  value="北海道">北海道</option><option  value="青森県">青森県</option><option  value="岩手県">岩手県</option><option  value="秋田県">秋田県</option><option  value="宮城県">宮城県</option><option  value="山形県">山形県</option><option  value="福島県">福島県</option><option  value="茨城県">茨城県</option><option  value="栃木県">栃木県</option><option  value="群馬県">群馬県</option><option  value="埼玉県">埼玉県</option><option  value="千葉県">千葉県</option><option  value="東京都">東京都</option><option  value="神奈川県">神奈川県</option><option  value="新潟県">新潟県</option><option  value="長野県">長野県</option><option  value="山梨県">山梨県</option><option  value="富山県">富山県</option><option  value="石川県">石川県</option><option  value="福井県">福井県</option><option  value="静岡県">静岡県</option><option  value="愛知県">愛知県</option><option  value="岐阜県">岐阜県</option><option  value="三重県">三重県</option><option  value="滋賀県">滋賀県</option><option  value="京都府">京都府</option><option  value="大阪府">大阪府</option><option  value="兵庫県">兵庫県</option><option  value="奈良県">奈良県</option><option  value="和歌山県">和歌山県</option><option  value="鳥取県">鳥取県</option><option  value="島根県">島根県</option><option  value="岡山県">岡山県</option><option  value="広島県">広島県</option><option  value="山口県">山口県</option><option  value="香川県">香川県</option><option  value="徳島県">徳島県</option><option  value="高知県">高知県</option><option  value="愛媛県">愛媛県</option><option  value="福岡県">福岡県</option><option  value="佐賀県">佐賀県</option><option  value="長崎県">長崎県</option><option  value="大分県">大分県</option><option  value="熊本県">熊本県</option><option  value="宮崎県">宮崎県</option><option  value="鹿児島県">鹿児島県</option><option value="沖縄県">沖縄県</option>
+								</select></p>
+								<p>市区町村：<input type="text" name="billing_city" value="" size="50" class="active" /></p>
+								番地：<input type="text" name="billing_address1" value="" size="50" class="active" />
+								</td>
+								</tr>
+								<tr>
+								<th>メールアドレス</th>
+								<td>※マイチューターに登録したメールアドレスを入力<br />
+								<input type="text" name="buyer_email" value="" size="50" class="disabled" /></td>
+								</tr>
+							</table>
+							<p class="cen"><input type="submit" value="送信する" onclick="submit_point100();" class="btn" /></p>
+						</form>
+						<script type="text/javascript"> 
+							function submit_point100(){
+							document.form_point100.style.display = "none";
+							document.getElementById("hss_point100").style.display = "block";
+							document.getElementById("btn_paypal100").style.display = "none";
+							}
+							//document.form_point03.submit(); 
+						</script>
 					</div>
 				</div>
 
@@ -183,13 +328,61 @@ Math.floor(new Date().getTime() / 86400);
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 							<li><a href="service.html#01">規約に同意の上　銀行振り込みでお支払い</a></li>
 							<li id="btn_paypal03">規約に同意の上paypalでお支払い<br />
-                                <div>
-                                    <div id="paypal-button-79800" data-price="79800" style="margin-top:12px; margin-bottom:7px"></div>
-                                    <div id="paypalcc-button-79800" data-price="79800" style="margin-bottom:20px;"></div>
-                                </div>	
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="KAJ2XRUU2K8FU">
+								<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+								<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
 							</li>
 							<li class="dsp_hp">規約に同意の上クレジットカードでお支払い <b class="red">記入欄は番地まで全て埋めてください。</b></li>
 						</ul>
+						<iframe id="hss_point03" name="hss_point03" width="570px" height="540px" style="display:none;"></iframe> 
+							<form target="hss_point03" name="form_point03" method="post" action="https://securepayments.paypal.com/acquiringweb" class="dsp_hp"> 
+							<input type="hidden" name="cmd" value="_hosted-payment"> 
+							<input type="hidden" name="subtotal" value="79800"> 
+							<input type="hidden" name="business" value="MFRWB24ML34SW"> 
+							<input type="hidden" name="paymentaction" value="sale"> 
+							<input type="hidden" name="template" value="templateD"> 
+							<input type="hidden" name="return" value="https://www.mytutor-jpn.com/service.html"> 
+							<input type="hidden" name="custom" value="125POINTPLAN">
+							<input type="hidden" name="currency_code" value="JPY" >
+							<input type="hidden" name="billing_country" value="JP" />
+							<table class="tbl">
+								<tr>
+								<th>名前</th>
+								<td>姓：<input type="text" name="billing_last_name" value="" size="10" class="active" />　
+								名：<input type="text" name="billing_first_name" value="" size="10" class="active" /></td>
+								</tr>
+								<tr>
+								<th>郵便番号</th>
+								<td><input type="text" name="billing_zip" value="" size="15" class="disabled" /></td>
+								</tr>
+								<tr>
+								<th>住所</th>
+								<td><p><select name="billing_state">			
+								<option  value="">▼ 都道府県</option><option  value="北海道">北海道</option><option  value="青森県">青森県</option><option  value="岩手県">岩手県</option><option  value="秋田県">秋田県</option><option  value="宮城県">宮城県</option><option  value="山形県">山形県</option><option  value="福島県">福島県</option><option  value="茨城県">茨城県</option><option  value="栃木県">栃木県</option><option  value="群馬県">群馬県</option><option  value="埼玉県">埼玉県</option><option  value="千葉県">千葉県</option><option  value="東京都">東京都</option><option  value="神奈川県">神奈川県</option><option  value="新潟県">新潟県</option><option  value="長野県">長野県</option><option  value="山梨県">山梨県</option><option  value="富山県">富山県</option><option  value="石川県">石川県</option><option  value="福井県">福井県</option><option  value="静岡県">静岡県</option><option  value="愛知県">愛知県</option><option  value="岐阜県">岐阜県</option><option  value="三重県">三重県</option><option  value="滋賀県">滋賀県</option><option  value="京都府">京都府</option><option  value="大阪府">大阪府</option><option  value="兵庫県">兵庫県</option><option  value="奈良県">奈良県</option><option  value="和歌山県">和歌山県</option><option  value="鳥取県">鳥取県</option><option  value="島根県">島根県</option><option  value="岡山県">岡山県</option><option  value="広島県">広島県</option><option  value="山口県">山口県</option><option  value="香川県">香川県</option><option  value="徳島県">徳島県</option><option  value="高知県">高知県</option><option  value="愛媛県">愛媛県</option><option  value="福岡県">福岡県</option><option  value="佐賀県">佐賀県</option><option  value="長崎県">長崎県</option><option  value="大分県">大分県</option><option  value="熊本県">熊本県</option><option  value="宮崎県">宮崎県</option><option  value="鹿児島県">鹿児島県</option><option value="沖縄県">沖縄県</option>
+								</select></p>
+								<p>市区町村：<input type="text" name="billing_city" value="" size="50" class="active" /></p>
+								番地：<input type="text" name="billing_address1" value="" size="50" class="active" />
+								</td>
+								</tr>
+								<tr>
+								<th>メールアドレス</th>
+								<td>※マイチューターに登録したメールアドレスを入力<br />
+								<input type="text" name="buyer_email" value="" size="50" class="disabled" /></td>
+								</tr>
+							</table>
+							<p class="cen"><input type="submit" value="送信する" onclick="submit_point03();" class="btn" /></p>
+						</form>
+						<script type="text/javascript"> 
+							function submit_point03(){
+							document.form_point03.style.display = "none";
+							document.getElementById("hss_point03").style.display = "block";
+							document.getElementById("btn_paypal03").style.display = "none";
+							}
+							//document.form_point03.submit(); 
+						</script>
 					</div>
 				</div>
 				
@@ -208,10 +401,13 @@ Math.floor(new Date().getTime() / 86400);
 							<p class="cen">6,980 円で毎月8レッスン<br />受講できるプランです。</p>
 						</div>
 						<ul>
-							<li>規約に同意の上paypalでお支払い<br /></li>
-                            <div>
-                                <div id="paypal-button-6980" data-price="6980" style="margin-top:12px; margin-bottom:7px"></div>                              
-                            </div>							
+							<li>規約に同意の上paypalでお支払い<br />
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="YJUHM4VM5Z2DJ">
+									<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+									<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form></li>
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -224,10 +420,14 @@ Math.floor(new Date().getTime() / 86400);
 							<p class="cen">8,980円で毎月12レッスン<br />受講できるプランです。</p>
 						</div>
 						<ul>
-							<li>規約に同意の上paypalでお支払い</li>
-                            <div>
-                                <div id="paypal-button-8980" data-price="8980" style="margin-bottom:7px"></div>                                   
-                            </div>                            
+							<li>規約に同意の上paypalでお支払い<br />
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="ZMT38JMGTUXAC">
+									<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+									<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</li>
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -240,10 +440,14 @@ Math.floor(new Date().getTime() / 86400);
 							<p class="cen">10,980円で毎月16レッスン<br />受講できるプランです。</p>
 						</div>
 						<ul>
-							<li>規約に同意の上paypalでお支払い</li>
-                            <div>
-                                <div id="paypal-button-10980" data-price="10980" style="margin-bottom:7px"></div>                                   
-                            </div>                            
+							<li>規約に同意の上paypalでお支払い<br />
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="LGRQ9P64TRZ38">
+									<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+									<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</li>
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -256,10 +460,14 @@ Math.floor(new Date().getTime() / 86400);
 							<p class="cen">12,980円で毎月20レッスン<br />受講できるプランです。</p>
 						</div>
 						<ul>
-							<li>規約に同意の上paypalでお支払い</li>
-                            <div>
-                                <div id="paypal-button-12980" data-price="12980" style="margin-bottom:7px"></div>                                   
-                            </div>                              
+							<li>規約に同意の上paypalでお支払い<br />
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="KWFKBCX9U3LAU">
+									<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+									<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</li>
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -272,10 +480,14 @@ Math.floor(new Date().getTime() / 86400);
 							<p class="cen">19,980円で毎月30レッスン<br />受講できるプランです。</p>
 						</div>
 						<ul>
-							<li>規約に同意の上paypalでお支払い</li>
-                            <div>
-                                <div id="paypal-button-19980" data-price="19980" style="margin-bottom:7px"></div>                                   
-                            </div>                             
+							<li>規約に同意の上paypalでお支払い<br />
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="3PU3QE632QS8Y">
+									<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+									<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</li>
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -289,10 +501,14 @@ Math.floor(new Date().getTime() / 86400);
 							<p class="cen">月額制プラン<br />専用ポイントになります。</p>
 						</div>
 						<ul>
-							<li>規約に同意の上paypalでお支払い</li>
-                            <div>
-                                <div id="paypal-button-980" data-price="980" style="margin-bottom:7px"></div>                                   
-                            </div>                              
+							<li>規約に同意の上paypalでお支払い<br />
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="4C7ZXCWBQQ9S8">
+									<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+									<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</li>
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -304,10 +520,14 @@ Math.floor(new Date().getTime() / 86400);
 							<p class="cen">月額制プラン<br />専用ポイントになります。</p>
 						</div>
 						<ul>
-							<li>規約に同意の上paypalでお支払い</li>
-                            <div>
-                                <div id="paypal-button-1800" data-price="1800" style="margin-bottom:7px"></div>                                   
-                            </div>                              
+							<li>規約に同意の上paypalでお支払い<br />
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="UFU6C5NSNAAUU">
+									<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+									<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</li>
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -477,25 +697,5 @@ ytag({
 });
 
 </script>
-
-<script 
-src="https://www.paypal.com/sdk/js?client-id=AUrkj6HkKu1dSZy_jcAQbEaJP1jK77_d8zJ9rkOf8uTc7MDxUtBCHPD8bo3cpqJE5PNqKnk0k4ogsfVX&currency=JPY&locale=ja_JP&components=buttons,funding-eligibility&enable-funding=card,sepa" 
-data-sdk-integration-source="developer-studio">
-</script>
-<script src="js/paypal-app.js"></script>
-
-<style>
-    .paypal-button > .paypal-button-label-container {
-        width: 250px; /* Recommended width */
-        margin-bottom: 5px;
-    }
-
-   
-
-    #paypal-button-container iframe .paypal-button {
-       margin-bottom: 10px;
-    } 
-</style>
-
 </body>
-</html>
+<!-- InstanceEnd --></html>

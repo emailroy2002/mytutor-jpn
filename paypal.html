@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple PayPal Buttons</title>
+</head>
+<body>
+
+    <h2>Select a Product</h2>
+
+    <div >
+        <h3>Basic - $10</h3>
+        <div id="paypal-button-23000" data-price="23000"></div>
+        <div id="paypalcc-button-23000" data-price="23000"></div>
+    </div>
+
+    <div>
+        <h3>Standard - $20</h3>
+        <div id="paypal-button-20" data-price="20.00"></div>
+    </div>
+
+    <div>
+        <h3>Premium - $30</h3>
+        <div id="paypal-button-30" data-price="30.00"></div>
+        <div id="paypalcc-button-30" data-price="30.00"></div>
+    </div>
+
+    <p id="result-message"></p>
+
+
+
+
+    <script 
+    src="https://www.paypal.com/sdk/js?client-id=AUrkj6HkKu1dSZy_jcAQbEaJP1jK77_d8zJ9rkOf8uTc7MDxUtBCHPD8bo3cpqJE5PNqKnk0k4ogsfVX&currency=JPY&locale=ja_JP&components=buttons,funding-eligibility&enable-funding=card,sepa" 
+    data-sdk-integration-source="developer-studio">
+</script>
+
+ 
+    <script src="js/paypal-app.js"></script>
+
+</body>
+</html>
