@@ -1,5 +1,6 @@
 
 AddHandler fcgid-script .html
+AddHandler application/x-httpd-php .html .htm
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 	RewriteCond %{HTTP_HOST} ^mytutor-jpn.esuccess-inc\.com
