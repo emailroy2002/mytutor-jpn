@@ -1,0 +1,420 @@
+/*==================================================
+  Filename   ：common.css
+  Description：テンプレート部分のスタイルを記述
+==================================================*/
+
+/*------------------------------
+  ヘッダ
+------------------------------*/
+#header {
+	background: #FFFFFF;
+	border-top: 4px solid #0076be;
+}
+#header .in {
+	clear: both;
+	padding-bottom: 10px;
+	text-align: right;
+}
+#header p {
+	margin: 0;
+	padding-top: 5px;
+}
+#header p.title {
+	position: relative;
+	float: left;
+	top: -10px;
+	margin-bottom: -10px;
+}
+/* 上部テキスト */
+#header h1 {
+	color: #999999;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 16px;
+	text-align: right;
+}
+/* 上部ボタン（教育機関／塾のお客様） */
+#header .btn_education {
+	position: absolute;
+	left: 390px;
+	top: 22px;
+}
+/*------------------------------
+  メニュー
+------------------------------*/
+#menu {
+	clear: both;
+}
+#menu li {
+	list-style: none;
+}
+#menu ul.menu li {
+	height: 50px;
+	background: url(../img/menu/p.gif) no-repeat left center;
+}
+#menu ul.menu li a {
+	display: block;
+	padding: 12px 0 8px 20px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	line-height: 15px;
+}
+#menu ul.menu li a span {
+	display: block;
+	color: #FACA00;
+	font-size: 8px;
+	font-weight: normal;
+}
+#menu ul.menu li.on a,
+#menu ul.menu li a:hover {
+	background: url(../img/menu/on.png) no-repeat center bottom;
+}
+
+/*------------------------------
+  コンテナ
+------------------------------*/
+#container {
+	clear: both;
+	text-align: left;
+	line-height: 1.6;
+}
+#container h2 {
+	margin-bottom: 20px;
+}
+#container h2.top {
+	margin-bottom: 0px;
+}
+#container h3.sub {
+	margin-bottom: 10px;
+}
+#container h3.title_sub {
+	margin-bottom: 10px;
+	padding-left: 15px;
+	background: url(../img/title_sub.gif) no-repeat left top;
+	font-size: 28px;
+	line-height: 33px;
+}
+#container h3.title_sub a {
+	color: #333333;
+	text-decoration: none;
+}
+#container h3.title_sub .fm {
+	font-size: 25px;
+}
+#container h3.title_sub .fs {
+	font-size: 17px;
+}
+#container h3.title_sub .ico {
+	padding-left: 80px;
+	background: url(../img/ico.png) no-repeat left 40%;
+	background-size: auto 80%;
+	-webkit-background-size: auto 80%;
+}
+#container h3.title_waku,
+#container h4.title_waku {
+	padding: 5px;
+	padding-left: 20px;
+	background-color: #0378bf;
+	background-image: url(../img/ico_waku.gif), url(../img/title_waku.gif);
+	background-position: 10px top, top;
+	background-repeat: no-repeat, repeat-x;
+	border-radius: 10px 10px 0 0;
+	color: #FFFFFF;
+	font-size: 22px;
+}
+#container h3.title_waku:after,
+#container h4.title_waku:after {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	height: 0px;
+	content: "";
+}
+#container h3.title_waku .red {
+	text-shadow: 1px 1px 0px #FFFFFF, -1px 1px 0px #FFFFFF, 1px -1px 0px #FFFFFF, -1px -1px 0px #FFFFFF;
+}
+#container h3.title_waku .pick {
+	padding: 5px;
+	color: #faee00;
+	font-size: 16px;
+	font-weight: normal;
+}
+#container h3.title_waku .ico,
+#container h4.title_waku .ico {
+	padding-left: 80px;
+	background: url(../img/ico.png) no-repeat left center;
+	background-size: auto 100%;
+	-webkit-background-size: auto 100%;
+}
+#container h3.title_waku .yellow {
+	color: #F6F337;
+	font-size: 80%;
+	font-weight: normal;
+}
+/**/
+#container .box_waku {
+	clear: both;
+	margin-bottom: 30px;
+	padding: 10px;
+	background: #FFFFFF;
+	border: 1px solid #7F7F7F;
+	border-top: none;
+}
+#container .box_waku:after {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	height: 0px;
+	content: "";
+}
+/**/
+#container .title_list {
+	margin-bottom: 15px;
+	color: #1F71BC;
+	font-size: 22px;
+}
+#container .title_list:before {
+	content: "\25A0";
+	color: #F19C1E;
+}
+#container .title_list span.fs {
+	margin-left: 10px;
+	color: #333333;
+	font-size: 15px;
+}
+
+/*------------------------------
+  メイン
+------------------------------*/
+
+/*------------------------------
+  ナビ
+------------------------------*/
+#navi p {
+	margin-bottom: 20px;
+}
+/* お知らせ */
+#navi_info {
+	clear: both;
+	margin-bottom: 20px;
+	padding: 0px 5px 5px;
+	background: #cccccc url(../img/navi/bg_info.gif) repeat-x top;
+	border: 1px solid #8c8c8c;
+	font-size: 95%;
+	line-height: 1.4;
+}
+#navi_info h3 {
+	padding: 5px 0 5px 15px;
+	background: url(../img/navi/p.png) no-repeat left center;
+	color: #0076be;
+	font-size: 18px;
+}
+#navi_info .box {
+	padding: 5px;
+	background: #FFFFFF;
+}
+#navi_info .box dt {
+	color:#1569C3;
+}
+#navi_info .box dd {
+	border-bottom: dashed 1px #999999; 
+	margin-bottom:10px;
+	padding-bottom:10px;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+#navi_info .box dd p {
+	margin-bottom: 10px;
+}
+/* スカイプ */
+#skype a {
+	display: block;
+	padding: 6px 0px;
+	background: #00aff0;
+	border: 5px solid #7fd7f7;
+	color: #FFFFFF;
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+#skype_how a {
+	display: block;
+	padding: 8px 0px;
+	background: #ff7800;
+	border: 5px solid #ff9600;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+/* メニュー */
+#page_menu,
+.page_menu {
+	margin-bottom: 20px;
+	background: #FFFFFF;
+	border: 1px solid #BBBBBB;
+}
+#page_menu li,
+.page_menu li {
+	list-style: none;
+	border-bottom: 1px solid #DDDDDD;
+}
+#page_menu a,
+.page_menu a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+.page_menu a {
+	padding: 5px 10px;
+	font-size: 95%;
+}
+#page_menu a:hover,
+.page_menu a:hover {
+	background: #FFC;
+}
+/* リンク */
+#navi_link {
+	clear: both;
+	width: 198px;
+	height: 24px;
+	padding: 1px;
+	background: #052e68;
+	margin-bottom: 20px;
+}
+#navi_link li {
+	float: left;
+	width: auto;
+	height: 24px;
+	list-style: none;
+}
+
+#navi dt.title_waku {
+	padding: 5px;
+	padding-left: 20px;
+	background-color: #0378bf;
+	background-image: url(../img/ico_waku.gif), url(../img/title_waku.gif);
+	background-position: 10px top, top;
+	background-repeat: no-repeat, repeat-x;
+	border-radius: 10px 10px 0 0;
+	color: #FFFFFF;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+/*------------------------------
+  フッタ
+------------------------------*/
+#footer {
+	clear: both;
+	background: #052e68 url(../img/bg_footer.gif) repeat-x top;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 28px;
+}
+#footer p {
+	margin: 0px;
+}
+#footer .box {
+	clear: both;
+	padding: 15px 0px 10px;
+	text-align: left;
+}
+#footer .box li {
+	display: inline;
+	margin-right: 10px;
+	padding-left: 10px;
+	background: url(../img/p.gif) no-repeat left center;
+	list-style: none;
+	white-space: nowrap;
+}
+#footer .box li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#footer .box li a:hover {
+	text-decoration: underline;
+}
+/* コピーライト */
+#copyright {
+	clear: both;
+	font-size: 85%;
+	color: #8EBFF2;
+	text-align:left;
+}
+/* ページトップ */
+#page_top {
+	clear: both;
+	font-size: 11px;
+	line-height: 1;
+}
+#page_top a {
+	display: block;
+	float: right;
+	width: 110px;
+	height: 14px;
+	padding: 6px 10px 0px;
+	background: #052E68;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#page_top a:hover {
+	text-decoration: underline;
+}
+
+/*------------------------------
+  共通
+------------------------------*/
+/* パンくずリスト */
+#page_navi {
+	clear: both;
+	margin-bottom: 20px;
+	color: #888888;
+	font-size: 12px;
+	line-height: 1;
+}
+#page_navi li {
+	display: inline;
+	margin-right: 6px;
+}
+#page_navi a { text-decoration: none; color: #888888; }
+#page_navi a:hover { text-decoration: underline; color: #888888; }
+/* テーブル */
+.tbl {
+	width: 100%;
+}
+.tbl th,
+.tbl td {
+	padding: 10px;
+	background: #FFFFFF;
+	border: 1px solid #BBBBBB;
+}
+.tbl th {
+	background: #0076BE;
+	color: #FFFFFF;
+	white-space: nowrap;
+}
+/* 注意書き */
+dl.attention dt {
+	float: left;
+	width: 16px;
+}
+dl.attention dd {
+	margin-left: 16px;
+}
+p.attention {
+	text-indent: -1em;
+	margin-left: 1em;
+}
+/* マーク */
+.mark {
+	padding-left: 16px;
+	background: url(../img/p.gif) no-repeat 0% 50%;
+}

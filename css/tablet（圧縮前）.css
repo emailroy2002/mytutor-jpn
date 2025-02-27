@@ -1,0 +1,590 @@
+@media only screen and (max-width: 768px) and (min-width: 641px){
+/*------------------------------
+	タブレットのみ適応
+------------------------------*/
+.dsp_smt { display: none; }
+
+#navi p.bana {
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+#navi p.bana img {
+	width: 90%;
+	height: auto;
+}
+
+/*------------------------------
+	レッスンコース紹介
+------------------------------*/
+#curriculum li {
+	width: 23.5%;
+	margin-right: 2%;
+	box-sizing: border-box;
+}
+#curriculum li:nth-of-type(4n) {
+	margin-right: 0;
+}
+
+/*------------------------------
+	TOEFL
+------------------------------*/
+#toefl dl {
+	width: 48%;
+}
+#toefl dl.fl {
+	clear: both;
+	float: left;
+}
+#toefl dl.fr {
+	float: right;
+}
+
+/* 受講までの流れ */
+#toefl_flow li {
+	width: calc(34.3% - 22px);
+	padding-left: 22px;
+	background: url(../img/toefl/arrow_flow.gif) no-repeat left top 20px;
+}
+#toefl_flow li:first-child {
+	padding-left: 0;
+	background: none;
+}
+
+#navi_toefl dl {
+	width: 48%;
+}
+#navi_toefl dl:nth-of-type(odd) {
+	clear: both;
+	float: left;
+}
+#navi_toefl dl:nth-of-type(even) {
+	float: right;
+}
+
+/*------------------------------
+  IELTS（アイエルツ）対策コース
+------------------------------*/
+#ielts .btn_training_w2 p.pad_top {
+	margin-top: 30px;
+}
+/* 特訓ゼミ */
+#training dl {
+	width: 48%;
+}
+
+/*------------------------------
+	TEDで英会話
+------------------------------*/
+/* レッスンの流れ */
+#ted_flow li {
+	width: calc(25% - 15px);
+	padding-left: 20px;
+	background: url(../img/ted/arrow_flow.gif) no-repeat left top 20px;
+}
+#ted_flow li:first-child {
+	padding-left: 0;
+	background: none;
+}
+
+/*------------------------------
+	大学生就職活動
+------------------------------*/
+#university ul.graph li {
+	width: 40%;
+	box-sizing: border-box;
+}
+#university ul.graph li+li {
+	width: 60%;
+}
+#university ul.graph li+li+li {
+	width: 50%;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+/*------------------------------
+	タブレット・スマホに適応
+------------------------------*/
+.dsp_hp { display: none; }
+.w100 img { width: 100%; 	height: auto; }
+.br { display: block; }
+
+/* ヘッダ */
+#header .in {
+	padding: 0 10px 10px;
+}
+#header h1 {
+	margin-bottom: 5px;
+}
+#header .title {
+	padding-top: 10px;
+}
+#menu_link {
+	float: right;
+	width: 35px;
+	padding: 8px 10px;
+	background: #0076be;
+	border-radius: 5px;
+}
+#menu_link img {
+	width: 100%;
+	height: auto;
+}
+/* メニュー */
+#menu {
+	background: #0076be;
+}
+#menu li {
+	border-bottom: 1px solid #ffffff;
+}
+#menu ul.btn li {
+	height: 50px;
+	background: url(../img/menu/p.gif) no-repeat left center;
+}
+#menu ul.btn li a {
+	display: block;
+	padding: 12px 0 8px 20px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	line-height: 30px;
+}
+#menu ul.menu li.on a,
+#menu ul.menu li a:hover {
+	background-position: left bottom;
+}
+/* コンテナ */
+#container{
+	padding: 15px 15px 0;
+}
+#main, #navi {
+	clear: both;
+	padding-bottom: 30px;
+}
+/* ナビ */
+#navi .bana_l {
+	clear: both;
+	float: left;
+	width: 48%;
+}
+#navi .bana_r {
+	float: right;
+	width: 48%;
+}
+/* フッター */
+#footer {
+	padding-bottom: 90px;
+}
+#footer .box {
+	padding: 10px;
+}
+#footer_btn {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: calc(100% - 140px);
+	height: 70px;
+	margin: 0;
+	padding: 20px 120px 0 20px;
+	background-image: url(../img/bg_btn.png), url(../img/bg_yellow.gif);
+	background-position: right top, center;
+	background-repeat: no-repeat, repeat-x;
+	
+	background-size: auto 100%;
+	-webkit-background-size: auto 100%;
+	
+	border-top: 1px solid #F6CB0B;
+	box-shadow: 0px -2px 10px rgba(0,0,0,0.3);
+	text-align: center;
+}
+#footer_btn img {
+	width: 100%;
+	height: auto;
+}
+
+/*------------------------------
+  トップページ
+------------------------------*/
+/* タイトル */
+#top_title .link {
+	width: 326px;
+}
+#top_title .link li {
+	width: 150px;
+}
+#top_title .link img {
+	width: 100%;
+	height: auto;
+}
+#top_title .txt p.rit {
+	margin-bottom: 50px;
+}
+/* リンクバナー */
+#top_link {
+	width: auto;
+	padding-bottom: 0;
+	margin-bottom: 30px;
+}
+#top_link li {
+	width: 20%;
+	height: auto;
+	padding-bottom: 4px;
+	text-align: center;
+}
+#top_link.w3 li {
+	width: 33%;
+	height: auto;
+}
+#top_link.w3 li:first-child {
+	padding-left: 0.5%;
+}
+#top_link.w3 li img {
+	width: 100%;
+	height: auto;
+}
+/* 動画 */
+#top_mv {
+	margin-bottom: 30px;
+}
+#top_mv .fl {
+	width: 32%;
+	margin-right: 2%;
+}
+#top_mv .fr {
+	width: 32%;
+}
+#top_mv img {
+	width: 100%;
+	height: auto;
+}
+/* 6つのビジネスシーン */
+#top_six_business ul {
+	width: 48%;
+	margin: 0;
+}
+#top_six_business ul+ul {
+	float: right;
+}
+/* 特訓 */
+#top_training dl {
+	width: 23.5%;
+}
+#top_training dl+dl {
+	margin-left: 2%;
+}
+#top_training dt img {
+	width: 100%;
+	height: auto;
+}
+#top_training dd.title {
+	font-size: 13px;
+}
+/* コース */
+#top_course dl {
+	width: calc(48% - 22px);
+}
+#top_course dd iframe,
+#top_course dd img {
+	width: 100%;
+	height: auto;
+}
+
+#top_instructor_title a {
+	font-size: 20px;
+}
+
+/*------------------------------
+	レッスンコース紹介
+------------------------------*/
+#curriculum_link li {
+	width: 23.5%;
+}
+#curriculum_link li+li {
+	margin-left: 2%;
+}
+#curriculum_link li img {
+	width: 100%;
+	height: auto;
+}
+
+/*------------------------------
+	ご利用方法
+------------------------------*/
+/* 流れ図 */
+#flow dl {
+	width: calc(22% - 2px);
+}
+#flow dl+dl {
+	margin-left: 4%;
+}
+#flow dt {
+	font-size: 20px;
+}
+
+/*------------------------------
+	サービス内容
+------------------------------*/
+#service h4 {
+	font-size: 18px;
+}
+#service h4 .no {
+	top: -5px;
+	padding: 5px;
+	font-size: 26px;
+}
+#service h4 .no.w1 {
+	padding: 5px 10px;
+}
+#service h4 .no.w3 {
+	padding: 5px 9px 5px 3px;
+}
+#service h4 .price span {
+	font-size: 26px;
+}
+#service h4 span.waku {
+	padding: 6px 10px;
+}
+
+/*------------------------------
+	英検・児童英検コース
+------------------------------*/
+#eiken .column {
+	top: auto;
+	margin-bottom: 10px;
+}
+/**/
+#eiken .plus {
+	margin: 30px 0 50px;
+}
+#eiken .plus p {
+	text-align: center;
+}
+#eiken .plus p.fl {
+	float: none;
+}
+#eiken .plus .ico {
+	float: none;
+	padding: 0;
+	margin: 0 0 0.8em;
+}
+/**/
+#eiken .students .fl,
+#eiken .students .fr {
+	float: none;
+	width: auto;
+}
+
+/*------------------------------
+	模試トレ
+------------------------------*/
+#moshitore h2 a {
+	top: 15px;
+	left: 15px;
+	width: 70%;
+}
+/**/
+#moshitore .box dt {
+	font-size: 15px;
+}
+#moshitore .box dt b {
+	font-size: 24px;
+}
+#moshitore .box p.img_rit {
+	width: 240px;
+}
+#moshitore .box p.img_rit img {
+	width: 100%;
+	height: auto;
+}
+/* 流れ */
+#moshitore #flow dl {
+	width: calc(32% - 2px);
+}
+#moshitore #flow dl+dl {
+	margin-left: 2%;
+}
+#moshitore #flow dt {
+	height: auto;
+	padding: 10px 0 0 50px;
+	text-align: left;
+}
+#moshitore #flow dt span {
+	text-align: center;
+}
+#moshitore #flow dd {
+	height: auto;
+	padding: 10px;
+	font-size: 13px;
+	text-align: left;
+}
+
+/*------------------------------
+	TOIEC
+------------------------------*/
+/* タイトル */
+#toeic_title .btn {
+	left: 20px;
+	top: 60px;
+	width: 120px;
+}
+/* リンクバナー */
+#toeic_link {
+	width: auto;
+}
+#toeic_link li {
+	width: 20%;
+	height: auto;
+}
+/**/
+#toeic dt b {
+	display: block;
+	margin-bottom: 10px;
+}
+#toeic dt .fr {
+	float: none;
+	text-align: right;
+}
+#toeic .box_waku dl.fl {
+	margin-bottom: 20px;
+}
+#toeic .box_waku dl.fl,
+#toeic .box_waku dl.fr {
+	float: none;
+}
+/**/
+#toeic dd .tbl_photo th img {
+	width: 200px;
+	height: auto;
+}
+
+/*------------------------------
+	スピーキング上達プログラム
+------------------------------*/
+#speaking .btn {
+	width: auto;
+}
+#speaking .btn li {
+	width: 32%;
+	margin-right: 2%;
+}
+#speaking .btn li+li+li {
+	margin-right: 0;
+}
+/**/
+#speaking dt {
+	float: left;
+	width: 230px;
+}
+#speaking dt img {
+	width: calc(100% - 20px);
+	height: auto;
+}
+#speaking dd {
+	margin-left: 250px;
+}
+
+/*------------------------------
+  講師紹介
+------------------------------*/
+#instructor .box dt {
+	margin-bottom: 15px;
+}
+#instructor .box dd+dd {
+	clear: both;
+	margin-left: 0;
+}
+
+/*------------------------------
+	大学生就職活動
+------------------------------*/
+#university dl {
+	width: 32%;
+	box-sizing: border-box;
+}
+#university dl.pad {
+	margin-right: 2%;
+}
+
+/*------------------------------
+	TOEFL
+------------------------------*/
+#navi_toefl {
+	clear: both;
+}
+
+/* インストラクター */
+#toefl_instructor li {
+	width: 19%;
+	margin: 5px 0.5%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+#toefl_instructor li img {
+	width: 100%;
+	height: auto;
+}
+
+/*------------------------------
+  IELTS（アイエルツ）対策コース
+------------------------------*/
+/* 特訓ゼミ */
+#training dl dd img {
+	width: 100%;
+	height: auto;
+}
+
+#ielts table.tutorial td img {
+	width: 95%;
+	height: auto;
+}
+
+/*------------------------------
+	6つのビジネスシーン別対策コース
+------------------------------*/
+/* 特徴 */
+#six_business .point dl {
+	width: calc(32% - 2px);
+}
+#six_business .point dl.fl {
+	margin-right: 2%;
+}
+
+/*------------------------------
+	法人向け
+------------------------------*/
+/* 流れ図 */
+#corporate_flow li {
+	float: none;
+	width: auto;
+}
+#corporate_flow li+li {
+	margin: 22px 0 0;
+}
+#corporate_flow li:after {
+	top: auto;
+	bottom: -22px;
+	right: 50%;
+	background: url(../img/toefl/arrow_flow_smt.gif) no-repeat left top;
+	width: 36px;
+	height: 22px;
+	margin-right: -18px;
+}
+#corporate_flow li p {
+	padding: 10px 0 10px;
+}
+
+/*------------------------------
+	TEAP対策コース
+------------------------------*/
+#teap .smp_list li {
+	float: none !important;
+	width: auto !important;
+}
+
+/*----------------------------*/
+}

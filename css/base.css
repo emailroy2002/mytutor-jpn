@@ -1,0 +1,39 @@
+*{margin:0;padding:0;}
+body{background:#ECECEC url(../img/bg.gif) repeat-x top;color:#333333;font-family: "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif;font-size:90%;text-align:center;}
+p{margin:0 0 0.8em;text-align:justify;text-justify:inter-ideograph;}
+p.nm{margin-bottom:0px;}
+h1,h2,h3,h4{font-size:100%;}
+hr{border:0px;border-bottom:1px dotted #BBBBBB;}
+table{border-collapse:collapse;border-spacing:0;empty-cells:show;}
+th{font-weight:normal;text-align:left;}
+img{vertical-align:bottom;}
+a{text-decoration:underline;}
+a:link, a:visited{color:#0076BE;}
+a:active, a:hover{text-decoration:none;}
+a img{border:none;text-decoration:none;}
+a.red{color:#E40B16;}
+.b{font-weight:bold;}
+.fs{font-size:75%;}
+.fs2{font-size:85%;}
+.fm{font-size:110%;}
+.fm2{font-size:120%;}
+.red{color:#E40B16;}
+.pick{color:#0076BE;}
+.thin{color:#888888;}
+.white{color:#FFFFFF;}
+.orange{color:#F60;}
+.pick_txt{font-size:130%;color:#0076BE;border-bottom:2px solid #0076BE;}
+.cen{text-align:center;}
+.lft{text-align:left;}
+.rit{text-align:right;}
+.vtop{vertical-align:top;}
+.vbtm{vertical-align:bottom;}
+.nowrap{white-space:nowrap;}
+.fl{float:left;}
+.fr{float:right;}
+.img_lft{float:left;margin-right:18px;}
+.img_rit{float:right;margin-left:18px;}
+.disabled{ime-mode:disabled;border:1px solid #A5ACB2;padding:2px;}
+.active{ime-mode:active;border:1px solid #A5ACB2;padding:2px;}
+.cb{clear:both;}
+.cf:after, .cb:after, .box:after{clear:both;display:block;overflow:hidden;height:0px;content:"";}

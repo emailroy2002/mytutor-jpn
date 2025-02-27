@@ -1,0 +1,170 @@
+@media only screen and (max-width:768px) and (min-width:641px){.dsp_smt{display:none;}
+#navi p.bana{float:left;width:33%;text-align:center;}
+#navi p.bana img{width:90%;height:auto;}
+#curriculum li{width:23.5%;margin-right:2%;box-sizing:border-box;}
+#curriculum li:nth-of-type(4n){margin-right:0;}
+#toefl dl{width:48%;}
+#toefl dl.fl{clear:both;float:left;}
+#toefl dl.fr{float:right;}
+#toefl_flow li{width:calc(34.3% - 22px);padding-left:22px;background:url(../img/toefl/arrow_flow.gif) no-repeat left top 20px;}
+#toefl_flow li:first-child{padding-left:0;background:none;}
+#navi_toefl dl{width:48%;}
+#navi_toefl dl:nth-of-type(odd){clear:both;float:left;}
+#navi_toefl dl:nth-of-type(even){float:right;}
+#ielts .btn_training_w2 p.pad_top{margin-top:30px;}
+#training dl{width:48%;}
+#ted_flow li{width:calc(25% - 15px);padding-left:20px;background:url(../img/ted/arrow_flow.gif) no-repeat left top 20px;}
+#ted_flow li:first-child{padding-left:0;background:none;}
+#university ul.graph li{width:40%;box-sizing:border-box;}
+#university ul.graph li+li{width:60%;}
+#university ul.graph li+li+li{width:50%;}
+}
+@media only screen and (max-width:768px){.dsp_hp{display:none;}
+.w100 img{width:100%;height:auto;}
+.br{display:block;}
+#header .in{padding:0 10px 10px;}
+#header h1{margin-bottom:5px;}
+#header .title{padding-top:10px;}
+#menu_link{float:right;width:35px;padding:8px 10px;background:#0076be;border-radius:5px;}
+#menu_link img{width:100%;height:auto;}
+#menu{background:#0076be;}
+#menu li{border-bottom:1px solid #ffffff;}
+#menu ul.btn li{height:50px;background:url(../img/menu/p.gif) no-repeat left center;}
+#menu ul.btn li a{display:block;padding:12px 0 8px 20px;color:#FFFFFF;font-size:14px;font-weight:bold;text-align:left;text-decoration:none;line-height:30px;}
+#menu ul.menu li.on a,
+#menu ul.menu li a:hover{background-position:left bottom;}
+#container{padding:15px 15px 0;}
+#main, #navi{clear:both;padding-bottom:30px;}
+#navi .bana_l{clear:both;float:left;width:48%;}
+#navi .bana_r{float:right;width:48%;}
+#footer{padding-bottom:90px;}
+#footer .box{padding:10px;}
+#footer_btn{position:fixed;left:0;bottom:0;width:calc(100% - 140px);height:70px;margin:0;padding:20px 120px 0 20px;background-image:url(../img/bg_btn.png), url(../img/bg_yellow.gif);background-position:right top, center;background-repeat:no-repeat, repeat-x;background-size:auto 100%;-webkit-background-size:auto 100%;border-top:1px solid #F6CB0B;box-shadow:0px -2px 10px rgba(0,0,0,0.3);text-align:center;}
+#footer_btn img{width:100%;height:auto;}
+.btn_ylw a {
+	width: 270px;
+	padding: 3px 7px;
+	font-size: 14px;
+	line-height: 14px;
+}
+#top_title .link{ overflow: hidden; margin-bottom: 20px; }
+#top_title .fl{ float:none; text-align: center; }
+#top_title .btn { width:380px; margin-left: auto; margin-right: auto; }
+/* 2018-02-17　変更前
+#top_title .link{width:326px;}
+#top_title .link li{width:150px;}
+#top_title .link img{width:100%;height:auto;}
+#top_title .txt p.rit{margin-bottom:50px;}
+*/
+#top_title .link img {
+	width: auto;
+}
+#top_title p.btn a {
+	width: auto;
+	padding: 10px 20px;
+}
+#top_title p.btn.pc_wrap a:first-of-type { margin-bottom:5px; }
+#top_link{width:auto;padding-bottom:0;margin-bottom:30px;}
+#top_link li{width:20%;height:auto;padding-bottom:4px;text-align:center;}
+#top_link.w3 li{width:33%;height:auto;}
+#top_link.w3 li:first-child{padding-left:0.5%;}
+#top_link.w3 li img{width:100%;height:auto;}
+#top_mv{margin-bottom:30px;}
+#top_mv .fl{width:32%;margin-right:2%;}
+#top_mv .fr{width:32%;}
+#top_mv img{width:100%;height:auto;}
+#top_six_business ul{width:48%;margin:0;}
+#top_six_business ul+ul{float:right;}
+#top_training dl{width:23.5%;}
+#top_training dl+dl{margin-left:2%;}
+#top_training dt img{width:100%;height:auto;}
+#top_training dd.title{font-size:13px;}
+#top_course dl{width:calc(48% - 22px);}
+#top_course dd iframe,
+#top_course dd img{width:100%;height:auto;}
+#top_instructor_title a{font-size:20px;}
+#curriculum_link li{width:23.5%;}
+#curriculum_link li+li{margin-left:2%;}
+#curriculum_link li img{width:100%;height:auto;}
+#flow dl{width:calc(22% - 2px);}
+#flow dl+dl{margin-left:4%;}
+#flow dt{font-size:20px;}
+#service h4{font-size:18px;}
+#service h4 .no{top:-5px;padding:5px;font-size:26px;}
+#service h4 .no.w1{padding:5px 10px;}
+#service h4 .no.w3{padding:5px 9px 5px 3px;}
+#service h4 .price span{font-size:26px;}
+#service h4 span.waku{padding:6px 10px;}
+#eiken .column{top:auto;margin-bottom:10px;}
+/**/#eiken .plus{margin:30px 0 50px;}
+#eiken .plus p{text-align:center;}
+#eiken .plus p.fl{float:none;}
+#eiken .plus .ico{float:none;padding:0;margin:0 0 0.8em;}
+/**/#eiken .students .fl,
+#eiken .students .fr{float:none;width:auto;}
+#eiken .box_waku .toku {font-size: 15px;margin-bottom: 5px;}
+#eiken ul.link {margin-bottom:0;}
+#eiken ul.link li {margin-right:2%;width:45%;margin-bottom:10px;}
+#eiken ul.link li:nth-of-type(even) {margin-right:0;float:none;}
+#eiken ul.link li a {padding: 2px 0;display: block;font-size: 14px;}
+#eiken ul.link:nth-of-type(2) {margin-bottom: 20px;}
+#eiken ul.link:nth-of-type(2) li a {padding: 2px 0;}
+#eiken ul.link:nth-of-type(2) li:nth-of-type(4) a, #eiken ul.link:nth-of-type(2) li:nth-of-type(5) a {font-size: 14px;padding: 4px 0;}
+#eiken ul.link:nth-of-type(2) li:nth-of-type(5) a {padding: 4px 10px 4px 30px;}
+#eiken ul.link:nth-of-type(2) li:nth-of-type(3) {margin-right: 49%;}
+#eiken ul.link:nth-of-type(2) li:nth-of-type(4),
+#eiken ul.link:nth-of-type(2) li:nth-of-type(5) {width: 45%;}
+#eiken ul.link:nth-of-type(2) li:nth-of-type(4) {margin-right: 2%;}
+
+#eiken dl.yellow_dl {width: calc(100% - 10px);}
+#eiken dl.yellow_dl dd {font-size: 14px;}
+#eiken .optional {background: none;}
+#eiken  .eiken_tbl th, #eiken .eiken_tbl td {display: block;margin-top:-1px;}
+#eiken .title_sub .yellow {margin-left: 0;}
+#container h4.title_waku2 {font-size:20px;}
+#eiken dl.op_dl dt {font-size:20px;}
+#moshitore h2 a{top:15px;left:15px;width:70%;}
+/**/#moshitore .box dt{font-size:15px;}
+#moshitore .box dt b{font-size:24px;}
+#moshitore .box p.img_rit{width:240px;}
+#moshitore .box p.img_rit img{width:100%;height:auto;}
+#moshitore #flow dl{width:calc(32% - 2px);}
+#moshitore #flow dl+dl{margin-left:2%;}
+#moshitore #flow dt{height:auto;padding:10px 0 0 50px;text-align:left;}
+#moshitore #flow dt span{text-align:center;}
+#moshitore #flow dd{height:auto;padding:10px;font-size:13px;text-align:left;}
+#toeic_title .btn{left:20px;top:60px;width:120px;}
+#toeic_link{width:auto;display:flex;}
+#toeic_link li{width:20%;height:auto;}
+#toeic_link li.w2 {width:20%;height:auto;}
+#toeic_link li.w2 a {padding:0;height:50%;display:flex;align-items:center;justify-content: center;font-size:12px;}
+/**/#toeic dt b{display:block;margin-bottom:10px;}
+#toeic dt .fr{float:none;text-align:right;}
+#toeic .box_waku dl.fl{margin-bottom:20px;}
+#toeic .box_waku dl.fl,
+#toeic .box_waku dl.fr{float:none;}
+/**/#toeic dd .tbl_photo th img{width:200px;height:auto;}
+#speaking .btn{width:auto;}
+#speaking .btn li{width:32%;margin-right:2%;}
+#speaking .btn li+li+li{margin-right:0;}
+/**/#speaking dt{float:left;width:230px;}
+#speaking dt img{width:calc(100% - 20px);height:auto;}
+#speaking dd{margin-left:250px;}
+#instructor .box dt{margin-bottom:15px;}
+#instructor .box dd+dd{clear:both;margin-left:0;}
+#university dl{width:32%;box-sizing:border-box;}
+#university dl.pad{margin-right:2%;}
+#navi_toefl{clear:both;}
+#toefl_instructor li{width:13%;margin:5px 0.5%;padding:5px;box-sizing:border-box;}
+#training dl dd img{width:100%;height:auto;}
+#ielts table.tutorial td img{width:95%;height:auto;}
+#six_business .point dl{width:calc(32% - 2px);}
+#six_business .point dl.fl{margin-right:2%;}
+#corporate_flow li{float:none;width:auto;}
+#corporate_flow li+li{margin:22px 0 0;}
+#corporate_flow li:after{top:auto;bottom:-22px;right:50%;background:url(../img/toefl/arrow_flow_smt.gif) no-repeat left top;width:36px;height:22px;margin-right:-18px;}
+#corporate_flow li p{padding:10px 0 10px;}
+#teap .smp_list li{float:none !important;width:auto !important;}
+/* 添削くん */
+#tensaku_flow dt{ font-size:20px; }
+}

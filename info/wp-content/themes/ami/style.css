@@ -1,0 +1,220 @@
+/*
+Theme Name: オリジナルテーマ
+Theme URI: http://www.esmilesys.co.jp/
+Description: Original theme
+Version: 1.0
+Author: e-smile systems
+Tags: 
+*/
+
+/*----------------------------------------
+ワードプレス内だけで使用するスタイルを記述
+共通枠で使用しているIDやCLASS名は使用しないこと
+----------------------------------------*/
+
+/* 記事 */
+.post {
+	clear: both;
+	margin-bottom: 30px;
+	background: #FFFFFF;
+	border: 1px solid #BBBBBB;
+}
+.post:after {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	height: 0px;
+	content: "";
+}
+
+/* タイトル */
+.post .post_title {
+	padding: 10px;
+	border-bottom: 1px solid #DDDDDD;
+	color: #0076BE;
+	font-size: 110%;
+	font-weight: bold;
+}
+.post .post_title a {
+	color: #0076BE;
+	text-decoration: none;
+}
+.post .post_title a:hover {
+	text-decoration: underline;
+}
+
+/* 日付 */
+.post .post_date {
+	clear: both;
+	padding: 10px 10px 5px;
+	color: #888888;
+	font-size: 80%;
+	font-weight: normal;
+	text-align: right;
+}
+
+/* カテゴリ */
+.post .post_category {
+	clear: both;
+	padding: 10px;
+	border-top: 1px solid #DDDDDD;
+	font-size: 80%;
+	color: #888888;
+	text-align: right;
+}
+.post .post_category a {
+	color: #888888;
+	text-decoration: none;
+}
+.post .post_category a:hover {
+	text-decoration: underline;
+}
+
+/* 本文 */
+.post_content {
+	padding: 0px 10px 10px;
+}
+.post_content iframe {
+	max-width: 100%;
+}
+
+/* ページナビ */
+#wp_pagenavi {
+	clear: both;
+}
+#wp_pagenavi:after {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	height: 0px;
+	content: "";
+}
+#wp_pagenavi .next {
+	float: right;
+}
+
+.post ul {
+	margin-left:1em;
+}
+.post ol {
+	margin-left:1.5em;
+}
+
+
+#navi h3.title_waku {
+	clear: both;
+	color: #FFFFFF;
+	font-size: 17px;
+}
+#navi h3.title_waku a {
+	color: #FFFFFF;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+
+.post img {
+	margin: 0;
+	height: auto;
+	max-width: 640px;
+}
+.post .attachment img {
+	max-width: 900px;
+}
+.post .alignleft,
+.post img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+.post .alignright,
+.post img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+.post .aligncenter,
+.post img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.post img.alignleft,
+.post img.alignright,
+.post img.aligncenter {
+	margin-bottom: 12px;
+}
+.post .wp-caption {
+	background: #f1f1f1;
+	line-height: 18px;
+	margin-bottom: 20px;
+	padding: 4px;
+	text-align: center;
+}
+.post .wp-caption img {
+	margin: 5px 5px 0;
+}
+.post .wp-caption p.wp-caption-text {
+	color: #888;
+	font-size: 12px;
+	margin: 5px;
+}
+.post .wp-smiley {
+	margin: 0;
+}
+.post .gallery {
+	margin: 0 auto 18px;
+}
+.post .gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 33%;
+}
+.post .gallery img {
+	border: 2px solid #cfcfcf;
+}
+.post .gallery .gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+.post .gallery dl {
+	margin: 0;
+}
+.post .gallery img {
+	border: 10px solid #f1f1f1;
+}
+.post .gallery br+br {
+	display: none;
+}
+.post .attachment img { /* single attachment images should be centered */
+	display: block;
+	margin: 0 auto;
+}
+
+#main .post .post_content h1 {
+	font-size: 130%;
+}
+#main .post .post_content h2 {
+	font-size: 120%;
+}
+#main .post .post_content h3 {
+	font-size: 110%;
+}
+
+
+/*--------------------------------------------------
+	スマートフォン
+--------------------------------------------------*/
+@media only screen and (max-width: 640px){
+.post img {
+	height: auto;
+	max-width: 100%;
+}
+}

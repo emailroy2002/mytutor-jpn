@@ -1,0 +1,950 @@
+
+/* タイトル */
+#lp_title {
+	padding: 30px 0;
+	background: #FFFFFF;
+	background-image: url(../lp/img/img_main.png), url(../lp/img/bg_title.jpg);
+	background-position: right bottom, left top;
+	background-repeat: no-repeat
+}
+#lp_title p+p {
+	margin-bottom: 0;
+}
+#lp_title a {
+	display: block;
+	width: 390px;
+	padding: 10px 0;
+	background: url(../lp/img/bg_btn.gif) repeat-x top;
+	background-size: auto 100%;
+	-webkit-background-size: auto 100%;
+	border-radius: 10px;
+	box-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+	color: #333333;
+	font-size: 27px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+/* キャッチフレーズ */
+#lp_catch {
+	padding: 10px;
+	background: #E40B16 url(../img/bg_slash.png);
+	font-weight: bold;
+}
+#lp_catch dt {
+	float: left;
+	color: #FFFFFF;
+	font-size: 37px;
+}
+#lp_catch dd ul {
+	float: right;
+}
+#lp_catch dd li {
+	float: left;
+	height: 52px;
+	margin-left: 25px;
+	padding: 0 25px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	font-size: 18px;
+	line-height: 52px;
+	list-style: none;
+}
+#lp_catch dd li b {
+	font-size: 27px;
+	vertical-align: middle;
+}
+#lp_catch dd li b span {
+	font-size: 42px;
+	vertical-align: middle;
+}
+#lp_catch dd li b.b {
+	font-size: 30px;
+}
+/* なぜ */
+#lp_why {
+	margin-bottom: 40px;
+	padding: 15px;
+	background: #FFFFFF;
+}
+#lp_why .in {
+	padding: 20px 40px 40px;
+	border: 1px solid #0076BE;
+}
+#lp_why h2 {
+	margin-bottom: 0;
+	border-bottom: 3px solid #FACA00;
+	font-size: 42px;
+	text-align: center;
+}
+#lp_why dl {
+	width: 400px;
+	margin-top: 30px;
+	padding: 15px;
+	background: #EFEFEF;
+}
+#lp_why dt {
+	position: relative;
+	min-height: 64px;
+	margin-bottom: 10px;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.3;
+}
+#lp_why dt p {
+	margin-bottom: 0;
+	padding-left: 70px;
+}
+#lp_why dt p.w2 {
+	line-height: 2.6;
+}
+#lp_why dt span.ico {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 64px;
+	height: 54px;
+	padding-top: 10px;
+	background: #E40B16;
+	border-radius: 50%;
+	color: #FCDE62;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1;
+}
+#lp_why dt span.ico b {
+	display: block;
+	font-size: 37px;
+}
+/* 講師 */
+#lp_instructor {
+	margin-bottom: 40px;
+}
+#lp_instructor h2 {
+	margin-bottom: 0;
+	font-size: 32px;
+	line-height: 1.3;
+}
+#lp_instructor .txt {
+	float: left;
+	width: 360px;
+}
+#lp_instructor ul {
+	float: right;
+	width: 630px;
+}
+#lp_instructor ul li {
+	float: left;
+	width: 70px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border: 5px solid #FFFFFF;
+	list-style: none;
+}
+#lp_instructor ul li img {
+	width: 100%;
+	height: auto;
+}
+/* TOEIC対策コース */
+#lp_toeic {
+}
+#lp_toeic h2 {
+	padding: 15px 0 10px;
+	background: #54A800 url(../img/bg_slash.png);
+	color: #FFFFFF;
+	font-size: 42px;
+	text-align: center;
+	line-height: 1.3;
+}
+#lp_toeic h2 b {
+	color: #FCDE62;
+	font-size: 53px;
+}
+#lp_toeic dl+dl {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px dashed #CCCCCC;
+}
+#lp_toeic dt {
+	position: relative;
+	margin-bottom: 20px;
+	padding-left: 45px;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+#lp_toeic dt b {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 34px;
+	height: 34px;
+	background: #54A800;
+	color: #FFFFFF;
+	font-size: 29px;
+	line-height: 34px;
+	text-align: center;
+}
+#lp_toeic dd:after {clear:both;display:block;overflow:hidden;height:0px;content:"";}
+#lp_toeic dd li {
+	margin-bottom: 1em;
+	padding-left: 10px;
+	border-left: 8px solid #333333;
+	list-style: none;
+}
+#lp_toeic dd li b {
+	margin-right: 10px;
+	color: #0076BE;
+	font-size: 29px;
+	line-height: 1.3;
+	vertical-align: middle;
+}
+#lp_toeic dd li+li b {
+	color: #F39800;
+}
+#lp_toeic dd li+li+li b {
+	color: #8FC31F;
+}
+#lp_toeic dd .price span {
+	font-size: 29px;
+	font-weight: bold;
+	border-bottom: 12px solid #FCDE62;
+}
+#lp_toeic dd .price span b {
+	margin-left: 10px;
+	font-size: 39px;
+}
+#lp_toeic .ico {
+	margin-bottom: 0;
+}
+#lp_toeic .ico:before {
+	color: #54A800;
+	content: "\25C6";
+}
+/* IELTS（アイエルツ）対策コース */
+#lp_ielts .title {
+	background: #E40B16 url(../img/bg_slash.png);
+}
+#lp_ielts .title li b {
+	color: #EB1B24;
+}
+#lp_ielts h3 {
+	border-left: 8px solid #E60012;
+}
+#lp_ielts .box ul.list {
+	margin-bottom: 1em;
+}
+#lp_ielts p.ico:before,
+#lp_ielts .box ul.list li:before {
+	color: #E60012;
+	content: "\25C6";
+}
+/* TOEFL （トフル）対策コース */
+#lp_toefl .title {
+	background: #00A0E9 url(../img/bg_slash.png);
+}
+#lp_toefl .title li:first-child {
+	padding-bottom: 3px;
+}
+#lp_toefl .title li span {
+	display: block;
+	padding-left: 25px;
+	background: url(../lp/img/chk.png) no-repeat left top;
+	font-size: 15px;
+}
+#lp_toefl .title li b {
+	color: #00A0E9;
+}
+#lp_toefl h3 {
+	border-left: 8px solid #00A0E9;
+}
+#lp_toefl .box ul.list li:before {
+	color: #00A0E9;
+	content: "\25C6";
+}
+/* コース共通 */
+.lp_course {
+	margin-bottom: 40px;
+}
+.lp_course h2 {
+	margin-bottom: 0 !important;
+}
+.lp_course h3 {
+	margin-bottom: 20px;
+	padding-left: 10px;
+	font-size: 34px;
+	line-height: 1.3;
+}
+.lp_course .box {
+	padding: 25px;
+	background: #FFFFFF !important;
+}
+.lp_course .title {
+	padding: 15px 20px 20px;
+}
+.lp_course .title h2 {
+	margin-bottom: 10px !important;
+	color: #FFFFFF;
+	font-size: 42px;
+	text-align: center;
+	line-height: 1.3;
+}
+.lp_course .title li {
+	position: relative;
+	float: left;
+	width: 250px;
+	padding: 10px 0 10px 50px;
+	background: #FFFFFF url(../lp/img/img_ielts_list01.jpg) no-repeat right top;
+	border: 5px solid #FFFFFF;
+	border-radius: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.3;
+	list-style: none;
+}
+.lp_course .title li+li {
+	margin-left: 15px;
+	background-image: url(../lp/img/img_ielts_list02.jpg);
+}
+.lp_course .title li+li+li {
+	background-image: url(../lp/img/img_ielts_list03.jpg);
+}
+.lp_course .title li b {
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	display: block;
+	width: 30px;
+	height: 40px;
+	padding-top: 20px;
+	background: url(../lp/img/pin.png) no-repeat left top;
+	font-size: 24px;
+	text-align: center;
+}
+.lp_course .box ul.list li {
+	text-indent: -1em;
+	margin-left: 1em;
+	list-style: none;
+}
+/* 流れ */
+#lp_flow {
+	margin-bottom: 50px;
+}
+#lp_flow h2 {
+	padding-left: 10px;
+	border-left: 11px solid #0076BE;
+	font-size: 34px;
+	line-height: 1.3;
+}
+#lp_flow dl {
+	margin-bottom: 20px;
+	padding-bottom: 35px;
+	background: url(../lp/img/arow.png) no-repeat center bottom;
+}
+#lp_flow dl.last {
+	padding-bottom: 0;
+	background: none;
+}
+#lp_flow dt {
+	position: relative;
+	padding: 15px;
+	padding-left: 80px;
+	background: #FACA00;
+	font-size: 29px;
+	font-weight: bold;
+}
+#lp_flow dt span.ico {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	display: block;
+	width: 64px;
+	height: 54px;
+	padding-top: 10px;
+	background: #0076BE;
+	border-radius: 50%;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1;
+}
+#lp_flow dt span.ico b {
+	display: block;
+	font-size: 37px;
+}
+#lp_flow dd {
+	padding: 20px 30px;
+	background: #FFFFFF;
+}
+#lp_flow dd:after {clear:both;display:block;overflow:hidden;height:0px;content:"";}
+/* キャンペーン */
+#lp_campaign {
+	margin-bottom: 50px;
+	padding: 10px;
+	background: #0076BE url(../img/bg_slash.png);
+}
+#lp_campaign .in {
+	padding: 40px;
+	background: #FFFFFF;
+}
+#lp_campaign h2 {
+	background: url(../lp/img/bg_campaign.png) repeat-y center;
+	background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	color: #FFFFFF;
+	font-size: 40px;
+	text-align: center;
+	line-height: 1.3;
+}
+#lp_campaign h2 span {
+	display: block;
+	padding: 10px 0;
+	background: url(../lp/img/bg_campaign_in.png) no-repeat center center;
+}
+#lp_campaign h2 span b {
+	color: #FCDE62;
+	font-size: 51px;
+}
+#lp_campaign dl {
+	margin-bottom: 30px;
+}
+#lp_campaign dl+dl {
+	margin-bottom: 0px;
+}
+#lp_campaign dt {
+	position: relative;
+	margin-bottom: -25px;
+	color: #0076BE;
+	font-size: 29px;
+	font-weight: bold;
+	text-align: center;
+}
+#lp_campaign dt b {
+	padding: 5px 30px;
+	background: #FACA00;
+	border-radius: 30px;
+}
+#lp_campaign dd {
+	padding: 40px 20px 20px;
+	background: #FEF4CC url(../lp/img/bg_campaign_dd.png);
+	border: 5px solid #FACA00;
+	border-radius: 10px;
+}
+#lp_campaign dd.b {
+	font-size: 34px;
+	text-align: center;
+}
+#lp_campaign dd b.line {
+	border-bottom: 8px solid #FCE47F;
+	font-size: 34px;
+	vertical-align: middle;
+}
+#lp_campaign dd p.title {
+	margin-top: 30px;
+}
+#lp_campaign dd p.title b {
+	padding-left: 10px;
+	border-left: 8px solid #0076BE;
+	font-size: 29px;
+	vertical-align: middle;
+}
+#lp_campaign dd th,
+#lp_campaign dd td {
+	padding: 5px 0;
+	border-bottom: 1px solid #B5B5B6;
+	font-size: 18px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+#lp_campaign dd th {
+	padding-right: 20px;
+}
+#lp_campaign dd td b.red span {
+	font-size: 27px;
+}
+#lp_campaign dd td.btn {
+	padding: 0 0 0 20px;
+	border-bottom: none;
+	white-space: normal;
+}
+#lp_campaign dd td.btn a {
+	display: block;
+	padding: 5px 30px;
+	background: url(../lp/img/bg_btn.gif) repeat-x top;
+	background-size: auto 100%;
+	-webkit-background-size: auto 100%;
+	border-radius: 10px;
+	box-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+	color: #333333;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+/* 共通 */
+.toeic {
+	color: #54A800;
+}
+.toefl {
+	color: #00A0E9;
+}
+.ielts {
+	color: #E40B16;
+}
+
+/*--------------------------------------------------
+	PCサイト用
+--------------------------------------------------*/
+@media only screen and (min-width:769px){
+	#container {
+		width: 1000px;
+		padding-top: 40px;
+	}
+	#footer {
+		min-height:80px;
+		margin-top:-80px;
+	}
+	#footer .box {
+		background-size: auto 40px;
+		-webkit-background-size: auto 40px;
+	}
+	#lp_title .in,
+	#lp_catch .in {
+		width: 1000px;
+		margin: auto;
+	}
+	/* TOEIC対策コース */
+	#lp_toeic .pad_top {
+		position: relative;
+		top: -100px;
+		margin-bottom: -100px;
+	}
+	#lp_toeic .pad_top2 {
+		position: relative;
+		top: -50px;
+		margin-bottom: -50px;
+	}
+	/* IELTS（アイエルツ）対策コース */
+	#lp_ielts .box {
+		padding-bottom: 0;
+	}
+	/* TOEFL （トフル）対策コース */
+	#lp_toefl .box {
+		padding-bottom: 0;
+	}
+	/* 流れ */
+	#lp_flow dd img {
+		position: relative;
+		top: -70px;
+		margin-bottom: -70px;
+	}
+	/* 料金 */
+	#service .box .txt03{
+		width: 400px;
+		padding: 50px 10px;
+	}
+}
+
+/*--------------------------------------------------
+	タブレット・スマホサイト用
+--------------------------------------------------*/
+@media only screen and (max-width:768px){
+	/* タイトル */
+	#lp_title {
+		padding-left: 20px;
+		background-image: url(../lp/img/img_main_sp.png), url(../lp/img/bg_title.jpg);
+		background-size: auto 100%, auto;
+		-webkit-background-size: auto 100%, auto;
+	}
+	#lp_title img {
+		width: 350px;
+		height: auto;
+	}
+	#lp_title a {
+		width: 350px;
+		font-size: 22px;
+	}
+	/* キャッチフレーズ */
+	#lp_catch dt {
+		float: none;
+		font-size: 30px;
+		text-align: center;
+	}
+	#lp_catch dd ul {
+		float: none;
+	}
+	#lp_catch dd li {
+		width: 25%;
+		margin-left: 0;
+		padding: 0;
+		font-size: 17px;
+	}
+	#lp_catch dd li+li {
+		width: 35%;
+		margin-left: 2%;
+	}
+	#lp_catch dd li b {
+		font-size: 20px;
+	}
+	#lp_catch dd li b span {
+		font-size: 30px;
+	}
+	#lp_catch dd li b.b {
+		font-size: 24px;
+	}
+	/* なぜ */
+	#lp_why {
+		padding: 10px;
+	}
+	#lp_why .in {
+		padding: 15px 20px 20px;
+	}
+	#lp_why h2 {
+		font-size: 25px;
+	}
+	#lp_why dl {
+		float: none !important;
+		width: auto;
+	}
+	/* 講師 */
+	#lp_instructor h2 {
+		margin-bottom: 10px;
+		font-size: 22px;
+	}
+	#lp_instructor h2 br {
+		display: none;
+	}
+	#lp_instructor .txt,
+	#lp_instructor ul {
+		float: none;
+		width: auto;
+	}
+	#lp_instructor ul li {
+		width: calc(12.5% - 10px);
+		margin-left: 0;
+	}
+	#lp_instructor ul li+li {
+		margin-left: 2%;
+	}
+	#lp_instructor ul li:nth-child(8) {
+		margin-left: 0;
+	}
+	/* TOEIC対策コース */
+	#lp_toeic h2 {
+		font-size: 30px;
+	}
+	#lp_toeic h2 b {
+		font-size: 40px;
+	}
+	#lp_toeic dt {
+		padding-left: 40px;
+		font-size: 28px;
+	}
+	#lp_toeic dt br {
+		display: none;
+	}
+	#lp_toeic dt b {
+		width: 30px;
+		height: 30px;
+		font-size: 22px;
+		line-height: 30px;
+	}
+	#lp_toeic dd .img_rit {
+		float: none;
+		margin: 0 0 20px;
+		text-align: center;
+	}
+	#lp_toeic dd li b {
+		font-size: 24px;
+	}
+	#lp_toeic dd .price span {
+		font-size: 22px;
+		border-width: 8px;
+	}
+	#lp_toeic dd .price span b {
+		font-size: 28px;
+	}
+	/* TOEFL （トフル）対策コース */
+	#lp_toefl .title li span {
+		font-size: 12px;
+	}
+	/* コース共通 */
+	.lp_course h3 {
+		font-size: 30px;
+	}
+	.lp_course p.fr {
+		float: none;
+	}
+	.lp_course p.fr img {
+		width: 100%;
+		height: auto;
+	}
+	.lp_course .box {
+		padding: 20px;
+		background: #FFFFFF !important;
+	}
+	.lp_course .title {
+		padding: 15px;
+	}
+	.lp_course .title h2 {
+		font-size: 30px;
+	}
+	.lp_course .title li {
+		width: calc(32% - 45px);
+		padding-left: 35px;
+		background-size: auto 100%;
+		-webkit-background-size: auto 100%;
+		font-size: 18px;
+		text-shadow: 1px 0 0 #FFFFFF, -1px 0 0 #FFFFFF, 0 1px 0 #FFFFFF, 0 -1px 0 #FFFFFF;
+	}
+	.lp_course .title li+li {
+		margin-left: 2%;
+	}
+	.lp_course .title li b {
+		left: 5px;
+		width: 24px;
+		height: 38px;
+		background-size: auto 100%;
+		-webkit-background-size: auto 100%;
+		font-size: 20px;
+	}
+	/* 流れ */
+	#lp_flow h2 {
+		font-size: 30px;
+	}
+	#lp_flow dd {
+		padding: 20px;
+	}
+	#lp_flow dd .img_rit {
+		width: 200px;
+		height: auto;
+	}
+	/* キャンペーン */
+	#lp_campaign {
+		padding: 5px;
+	}
+	#lp_campaign .in {
+		padding: 20px;
+	}
+	#lp_campaign h2 {
+		font-size: 30px;
+	}
+	#lp_campaign h2 span {
+		background-size: 100% auto;
+		-webkit-background-size: 100% auto;
+	}
+	#lp_campaign h2 span b {
+		font-size: 36px;
+	}
+	#lp_campaign dt {
+		font-size: 26px;
+	}
+	#lp_campaign dt b {
+		padding: 5px 30px;
+		background: #FACA00;
+		border-radius: 30px;
+	}
+	#lp_campaign dd {
+		padding: 40px 15px 15px;
+	}
+	#lp_campaign dd.b,
+	#lp_campaign dd b.line {
+		font-size: 30px;
+	}
+	#lp_campaign dd p.title {
+		margin-top: 20px;
+	}
+	#lp_campaign dd p.title b {
+		font-size: 26px;
+	}
+}
+
+/*--------------------------------------------------
+	スマホサイト用
+--------------------------------------------------*/
+@media only screen and (max-width:640px){
+	#wrap, #footer{ min-width:360px; }
+	/* タイトル */
+	#lp_title {
+		padding: 15px;
+		background: url(../lp/img/bg_title.jpg) no-repeat center top;
+	}
+	#lp_title img {
+		width: 100%;
+	}
+	#lp_title a {
+		width: auto;
+		font-size: 20px;
+	}
+	/* キャッチフレーズ */
+	#lp_catch dd li {
+		float: none;
+		width: auto !important;
+	}
+	#lp_catch dd li+li {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	/* なぜ */
+	#lp_why {
+		padding: 5px;
+	}
+	#lp_why .in {
+		padding: 15px;
+	}
+	#lp_why h2 {
+		font-size: 24px;
+		line-height: 1.3;
+	}
+	#lp_why dt {
+		font-size: 20px;
+	}
+	#lp_why dt br {
+		display: none;
+	}
+	#lp_why dt p {
+		padding-left: 50px;
+	}
+	#lp_why dt span.ico {
+		width: 46px;
+		height: 36px;
+		padding-top: 10px;
+		font-size: 12px;
+	}
+	#lp_why dt span.ico b {
+		font-size: 20px;
+	}
+	/* 講師 */
+	#lp_instructor h2 {
+		font-size: 20px;
+	}
+	#lp_instructor ul li {
+		width: calc(12.5% - 6px);
+		border-width: 3px;
+	}
+	/* TOEIC対策コース */
+	#lp_toeic h2 {
+		font-size: 22px;
+	}
+	#lp_toeic h2 b {
+		font-size: 30px;
+	}
+	#lp_toeic dt {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	#lp_toeic dd .img_rit img {
+		width: 100%;
+		height: auto;
+	}
+	#lp_toeic dd .img_rit a img {
+		width: auto;
+	}
+	#lp_toeic dd li b {
+		display: block;
+	}
+	#lp_toeic dd .price span {
+		font-size: 20px;
+		border-width: 5px;
+	}
+	/* TOEFL （トフル）対策コース */
+	#lp_toefl .title li span {
+		font-size: 12px;
+	}
+	/* コース共通 */
+	.lp_course h3 {
+		font-size: 20px;
+	}
+	.lp_course .box {
+		padding: 15px;
+	}
+	.lp_course .title {
+		padding: 10px;
+	}
+	.lp_course .title h2 {
+		font-size: 20px;
+	}
+	.lp_course .title li {
+		float: none;
+		width: auto;
+	}
+	.lp_course .title li+li {
+		margin: 10px 0 0;
+	}
+	/* 流れ */
+	#lp_flow h2 {
+		font-size: 20px;
+		border-width: 5px;
+	}
+	#lp_flow dt {
+		padding-left: 60px;
+		font-size: 19px;
+	}
+	#lp_flow dt span.ico {
+		width: 50px;
+		height: 40px;
+		padding-top: 10px;
+		font-size: 12px;
+	}
+	#lp_flow dt span.ico b {
+		font-size: 20px;
+	}
+	#lp_flow dd {
+		padding: 15px;
+	}
+	#lp_flow dd .img_rit {
+		width: 150px;
+	}
+	/* キャンペーン */
+	#lp_campaign {
+		margin-bottom: 0;
+	}
+	#lp_campaign .in {
+		padding: 15px;
+	}
+	#lp_campaign h2 {
+		font-size: 18px;
+	}
+	#lp_campaign h2 span b {
+		font-size: 22px;
+	}
+	#lp_campaign dt {
+		font-size: 20px;
+	}
+	#lp_campaign dt b {
+		padding: 3px 20px;
+	}
+	#lp_campaign dd {
+		padding: 40px 15px 15px;
+	}
+	#lp_campaign dd.b,
+	#lp_campaign dd b.line {
+		font-size: 20px;
+		border-width: 5px;
+	}
+	#lp_campaign dd p.title b {
+		font-size: 20px;
+	}
+	#lp_campaign dd table {
+		width: 100%;
+	}
+	#lp_campaign dd th,
+	#lp_campaign dd td {
+		display: block;
+		padding: 0;
+		border-bottom: none;
+		font-size: 16px;
+		text-align: center;
+	}
+	#lp_campaign dd td br {
+		display: none;
+	}
+	#lp_campaign dd td b.red span {
+		font-size: 22px;
+	}
+	#lp_campaign dd td.btn {
+		padding: 0;
+	}
+}
