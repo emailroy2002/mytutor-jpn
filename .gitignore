@@ -1,15 +1,15 @@
 # Core
-/info/wp-admin/
-/info/wp-content/index.php
-/info/wp-content/languages
-/info/wp-content/plugins/index.php
-/info/wp-content/themes/index.php
-/info/wp-includes/
-/info/index.php
-/info/license.txt
-/info/readme.html
-/info/wp-*.php
-/info/xmlrpc.php
+#/info/wp-admin/
+#/info/wp-content/index.php
+#/info/wp-content/languages
+#/info/wp-content/plugins/index.php
+#/info/wp-content/themes/index.php
+#/info/wp-includes/
+#/info/index.php
+#/info/license.txt
+#/info/readme.html
+#/info/wp-*.php
+#/info/xmlrpc.php
 
 # Configuration
 /info/wp-config.php

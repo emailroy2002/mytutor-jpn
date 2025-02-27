@@ -1,0 +1,97 @@
+# Translation of Plugins - Snow Monkey Editor - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Snow Monkey Editor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-11-04 05:39:45+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Snow Monkey Editor - Stable (latest release)\n"
+
+#: App/Setup/BlockStyles.php:133
+msgid "Ordered list (Circle)"
+msgstr "序列リスト (丸形)"
+
+#: App/Setup/BlockStyles.php:141
+msgid "Ordered list (Square)"
+msgstr "序列リスト (四角型)"
+
+#: App/Setup/BlockStyles.php:125
+msgid "Times"
+msgstr "✗"
+
+#: App/Setup/BlockStyles.php:101
+msgid "Arrow"
+msgstr "矢印"
+
+#: App/Setup/BlockStyles.php:117
+msgid "Remark"
+msgstr "備考"
+
+#: App/Setup/BlockStyles.php:109
+msgid "Check"
+msgstr "チェック"
+
+#: App/Setup/BlockStyles.php:85
+msgid "Fluid Shape 2"
+msgstr "流体シェイプ2"
+
+#: App/Setup/BlockStyles.php:157
+msgid "Post-it (Narrow)"
+msgstr "付箋（細）"
+
+#: App/Setup/BlockStyles.php:149
+msgid "Post-it"
+msgstr "付箋"
+
+#: App/Setup/BlockStyles.php:197 App/Setup/BlockStyles.php:208
+msgid "Shadowed"
+msgstr "影付き"
+
+#: App/Setup/BlockStyles.php:93
+msgid "Fluid Shape 3"
+msgstr "流体シェイプ3"
+
+#: App/Setup/BlockStyles.php:77
+msgid "Fluid Shape 1"
+msgstr "流体シェイプ1"
+
+#: App/Setup/BlockStyles.php:29
+msgid "Alert"
+msgstr "アラート"
+
+#. Author URI of the plugin
+#: snow-monkey-editor.php
+msgid "https://2inc.org"
+msgstr "https://2inc.org"
+
+#. Author of the plugin
+#: snow-monkey-editor.php
+msgid "inc2734"
+msgstr "inc2734"
+
+#. Description of the plugin
+#: snow-monkey-editor.php
+msgid "Extends gutenberg block editor"
+msgstr "gutenberg ブロックエディターを拡張"
+
+#. Plugin Name of the plugin
+#: snow-monkey-editor.php dist/js/editor-extension.js:7
+#: src/extension/editor.js:76
+msgid "Snow Monkey Editor"
+msgstr "Snow Monkey Editor"
+
+#: App/Setup/BlockStyles.php:37
+msgid "Alert (Remarks)"
+msgstr "アラート (備考)"
+
+#: App/Setup/BlockStyles.php:45
+msgid "Alert (Success)"
+msgstr "アラート（サクセス）"
+
+#: App/Setup/BlockStyles.php:53
+msgid "Alert (Warning)"
+msgstr "アラート（ワーニング）"

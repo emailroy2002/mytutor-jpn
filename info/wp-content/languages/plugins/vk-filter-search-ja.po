@@ -1,0 +1,202 @@
+# Translation of Plugins - VK Filter Search - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - VK Filter Search - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-01-17 14:06:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - VK Filter Search - Stable (latest release)\n"
+
+#: inc/filter-search/package/src/search-result-count/block.json
+msgctxt "block title"
+msgid "Search Result Count"
+msgstr "検索結果件数"
+
+#: inc/filter-search/package/class-vk-filter-search.php:724
+msgid "articles found."
+msgstr "件見つかりました。"
+
+#: inc/filter-search/package/class-vk-filter-search.php:723
+msgid "Search Results:"
+msgstr "検索結果:"
+
+#: inc/filter-search/package/src/search-result-title/block.json
+msgctxt "block title"
+msgid "Search Result Title"
+msgstr "Search Result Title"
+
+#: inc/filter-search/package/class-vk-filter-search.php:1043
+msgid "The post of \"VK Filter Search\" can be called by the \"Call Filter Search\" block."
+msgstr "“VK Filter Search” の投稿は「Call Filter Search」ブロックから呼び出すことができます。"
+
+#: inc/filter-search/package/class-vk-filter-search.php:1041
+msgid "We recommend creating a form with the post type \"VK Filteer Search\"."
+msgstr "投稿タイプ「VK Filter Search」でフォームを作成してください。"
+
+#: inc/filter-search/package/class-vk-filter-search.php:1039
+msgid "This form is obsolete and may eventually be deleted."
+msgstr "この形式は廃止されており、最終的には廃止される可能性があります。"
+
+#: inc/filter-search/package/class-vk-filter-search-title.php:32
+#: inc/filter-search/package/src/search-result-title/index.php:60
+#: inc/filter-search/package/src/search-result-title/index.php:80
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/search-result-title/index.js:29
+msgid "From %1$s to %2$s"
+msgstr "%1$s から %2$s まで"
+
+#: inc/filter-search/package/class-vk-filter-search-title.php:31
+#: inc/filter-search/package/src/search-result-title/index.php:59
+#: inc/filter-search/package/src/search-result-title/index.php:79
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/search-result-title/index.js:25
+msgid "To %s"
+msgstr "%s まで"
+
+#: inc/filter-search/package/class-vk-filter-search-title.php:30
+#: inc/filter-search/package/src/search-result-title/index.php:58
+#: inc/filter-search/package/src/search-result-title/index.php:78
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/search-result-title/index.js:21
+msgid "From %s"
+msgstr "%s 以降"
+
+#: inc/filter-search/package/class-vk-filter-search-title.php:22
+#: inc/filter-search/package/src/search-result-title/index.php:50
+#: inc/filter-search/package/src/search-result-title/index.php:70
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/search-result-title/index.js:17
+msgid "Search Result for %s"
+msgstr "検索結果 %s"
+
+#: inc/filter-search/package/src/call-filter-search/block.json
+msgctxt "block title"
+msgid "Call Filter Search Form"
+msgstr "Call Filter Search Form"
+
+#: inc/filter-search/package/src/call-filter-search/index.php:112
+msgid "Edit Search Form"
+msgstr "検索フォームを編集"
+
+#: inc/filter-search/package/class-vk-filter-search.php:599
+msgid "OR Search"
+msgstr "OR検索"
+
+#: inc/filter-search/package/class-vk-filter-search.php:595
+msgid "AND Search"
+msgstr "AND検索"
+
+#: vk-filter-search.php:68
+msgid "Buy Pro"
+msgstr "プロ版を購入"
+
+#: inc/filter-search/package/src/search-result-form/block.json
+msgctxt "block title"
+msgid "Search Result Form"
+msgstr "Search Result Form"
+
+#: inc/filter-search/package/class-vk-filter-search-block.php:54
+#: inc/filter-search/package/class-vk-filter-search-block.php:61
+#: inc/filter-search/package/class-vk-filter-search.php:457
+#: inc/filter-search/package/class-vk-filter-search.php:656
+msgid "Any"
+msgstr "指定なし"
+
+#. Plugin URI of the plugin
+#: vk-filter-search.php vk-filter-search.php:67
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/filter-search/edit.js:253
+#: inc/filter-search/package/src/keyword-search/edit.js:45
+#: inc/filter-search/package/src/post-type-search/edit.js:100
+#: inc/filter-search/package/src/taxonomy-search/edit.js:160
+msgid "https://vk-filter-search.com/"
+msgstr "https://www.vektor-inc.co.jp/service/wordpress-plugins/vk-filter-search/"
+
+#: inc/filter-search/package/src/taxonomy-search/block.json
+msgctxt "block title"
+msgid "VK Taxonomy Search"
+msgstr "VK Taxonomy Search"
+
+#: inc/filter-search/package/src/post-type-search/block.json
+msgctxt "block title"
+msgid "VK Post Type Search"
+msgstr "VK Post Type Search"
+
+#: inc/filter-search/package/src/keyword-search/block.json
+msgctxt "block title"
+msgid "VK Keyword Search"
+msgstr "VK Keyword Search"
+
+#: inc/filter-search/package/src/filter-search/block.json
+msgctxt "block title"
+msgid "VK Filter Search"
+msgstr "VK Filter Search"
+
+#: inc/filter-search/package/class-vk-filter-search.php:1048
+msgid "Edit"
+msgstr "編集"
+
+#: inc/filter-search/package/class-vk-filter-search-shortcode.php:54
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/filter-search/deprecated/0.3.1/save.js:51
+#: inc/filter-search/package/src/filter-search/deprecated/0.3.2/save.js:49
+#: inc/filter-search/package/src/filter-search/deprecated/0.4.6/save.js:49
+#: inc/filter-search/package/src/filter-search/deprecated/0.6.5/save.js:49
+#: inc/filter-search/package/src/filter-search/deprecated/1.6.1/save.js:53
+#: inc/filter-search/package/src/filter-search/deprecated/1.11.0/save.js:51
+#: inc/filter-search/package/src/filter-search/edit.js:300
+#: inc/filter-search/package/src/filter-search/save.js:42
+msgid "Search"
+msgstr "検索"
+
+#: inc/filter-search/package/src/call-filter-search/index.php:48
+msgid "Unspecified"
+msgstr "指定なし"
+
+#: inc/filter-search/package/class-vk-filter-search-title.php:87
+#: inc/filter-search/package/class-vk-filter-search.php:385
+#: inc/filter-search/package/class-vk-filter-search.php:435
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/post-type-search/edit.js:25
+#: inc/filter-search/package/src/search-result-title/edit.js:69
+msgid "Post Type"
+msgstr "投稿タイプ"
+
+#: inc/filter-search/package/class-vk-filter-search.php:345
+msgid "Input Keyword"
+msgstr "キーワードを入力"
+
+#: inc/filter-search/package/class-vk-filter-search-title.php:311
+#: inc/filter-search/package/class-vk-filter-search.php:344
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/search-result-title/edit.js:99
+msgid "Keyword"
+msgstr "キーワード"
+
+#. Author URI of the plugin
+#: vk-filter-search.php
+msgid "https://vektor-inc.co.jp"
+msgstr "https://vektor-inc.co.jp"
+
+#. Author of the plugin
+#: vk-filter-search.php
+msgid "Vektor,Inc."
+msgstr "Vektor,Inc."
+
+#. Description of the plugin
+#: vk-filter-search.php
+msgid "This plugin for filter search."
+msgstr "絞り込み検索が行えるプラグインです。"
+
+#. Plugin Name of the plugin
+#: vk-filter-search.php
+#: inc/filter-search/package/class-vk-filter-search-block.php:200
+#: inc/filter-search/package/class-vk-filter-search.php:45
+#: inc/filter-search/package/build/block.js:1
+#: inc/filter-search/package/src/filter-search/edit.js:213
+msgid "VK Filter Search"
+msgstr "VK Filter Search"
