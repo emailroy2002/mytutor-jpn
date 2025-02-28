@@ -1,8 +1,8 @@
 <?php
 header('Content-Type: application/json');
 
-$clientId       = "AUrkj6HkKu1dSZy_jcAQbEaJP1jK77_d8zJ9rkOf8uTc7MDxUtBCHPD8bo3cpqJE5PNqKnk0k4ogsfVX";
-$secret         = "EMaY79iqy-7yxXngcOCbADeZMK8p0cBZbgWdz4uiSr818TSi4G4RPK0ItDcFnnpkx9HLey15jVfjbups";
+$clientId       = "ATYj-7ZzewIea9u9_RULBGM3Esdwjd-4bIx0BY0BSJ43iSPzU9BLwwMXkDmwlRmDqC4mmNAR0ZjEFyEK";
+$secret         = "ECbYtQYtWhHCKtexAro9BuiosHS904UosEZusLwRGccQIxhelClwtZJ-ea4oWgs9g1pCfm9Zhl_M2uNI";
 $paypalBaseURL  = "https://api-m.sandbox.paypal.com";
 
 
