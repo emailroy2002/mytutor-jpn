@@ -36,7 +36,7 @@ document.querySelectorAll("[id^='paypal-button-']").forEach(button => {
                     //document.getElementById("result-message").textContent = `Payment successful for $${price}!`;
                     Swal.fire({
                         title: "Payment Successful!",
-                        text: `Payment successful for $${price}.`,
+                        text: `Payment successful for ¥${price}.`,
                         icon: "success",
                         confirmButtonText: "OK"
                     });                      
@@ -49,7 +49,7 @@ document.querySelectorAll("[id^='paypal-button-']").forEach(button => {
                 //document.getElementById("result-message").textContent = `Error capturing PayPal payment for $${price}.`;
                 Swal.fire({
                     title: "Capture Payment Error",
-                    text: `Error capturing PayPal payment for $${price}.`,
+                    text: `Error capturing PayPal payment for ¥${price}.`,
                     icon: "error",
                     confirmButtonText: "OK"
                 });                  
@@ -97,7 +97,7 @@ document.querySelectorAll("[id^='paypalcc-button-']").forEach(button => {
                     //document.getElementById("result-message").textContent = `Payment successful for $${price}!`;
                     Swal.fire({
                         title: "Credit Card Payment Successful!",
-                        text: `Credit Card Payment successful for $${price}.`,
+                        text: `Credit Card Payment successful for ¥${price}.`,
                         icon: "success",
                         confirmButtonText: "OK"
                     });                    
@@ -110,7 +110,7 @@ document.querySelectorAll("[id^='paypalcc-button-']").forEach(button => {
                 //document.getElementById("result-message").textContent = `Error capturing Credit Card  payment for $${price}.`;
                 Swal.fire({
                     title: "Capture Payment Error",
-                    text: `Error capturing Credit Card payment for $${price}.`,
+                    text: `Error capturing Credit Card payment for ¥${price}.`,
                     icon: "error",
                     confirmButtonText: "OK"
                 });                
