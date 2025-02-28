@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 $clientId       = "ATYj-7ZzewIea9u9_RULBGM3Esdwjd-4bIx0BY0BSJ43iSPzU9BLwwMXkDmwlRmDqC4mmNAR0ZjEFyEK";
-$secret         = "ECbYtQYtWhHCKtexAro9BuiosHS904UosEZusLwRGccQIxhelClwtZJ-ea4oWgs9g1pCfm9Zhl_M2uNIs";
+$secret         = "ECbYtQYtWhHCKtexAro9BuiosHS904UosEZusLwRGccQIxhelClwtZJ-ea4oWgs9g1pCfm9Zhl_M2uNI";
 $paypalBaseURL  = "https://api-m.sandbox.paypal.com";
 
 // Get request body
