@@ -33,14 +33,26 @@ document.querySelectorAll("[id^='paypal-button-']").forEach(button => {
             .then(res => res.json())
             .then(data => {
                 if (data.status === "COMPLETED") {
-                    document.getElementById("result-message").textContent = `Payment successful for $${price}!`;
+                    //document.getElementById("result-message").textContent = `Payment successful for $${price}!`;
+                    Swal.fire({
+                        title: "Payment Successful!",
+                        text: `Payment successful for $${price}.`,
+                        icon: "success",
+                        confirmButtonText: "OK"
+                    });                      
                 } else {
                     throw new Error("Payment not completed.");
                 }
             })
             .catch(error => {
                 console.error("Capture Payment Error:", error);
-                document.getElementById("result-message").textContent = `Error capturing PayPal payment for $${price}.`;
+                //document.getElementById("result-message").textContent = `Error capturing PayPal payment for $${price}.`;
+                Swal.fire({
+                    title: "Capture Payment Error",
+                    text: `Error capturing PayPal payment for $${price}.`,
+                    icon: "error",
+                    confirmButtonText: "OK"
+                });                  
             });
         },
            
@@ -82,14 +94,26 @@ document.querySelectorAll("[id^='paypalcc-button-']").forEach(button => {
             .then(res => res.json())
             .then(data => {
                 if (data.status === "COMPLETED") {
-                    document.getElementById("result-message").textContent = `Payment successful for $${price}!`;
+                    //document.getElementById("result-message").textContent = `Payment successful for $${price}!`;
+                    Swal.fire({
+                        title: "Payment Successful!",
+                        text: `Payment successful for $${price}.`,
+                        icon: "success",
+                        confirmButtonText: "OK"
+                    });                    
                 } else {
                     throw new Error("Payment not completed.");
                 }
             })
             .catch(error => {
                 console.error("Capture Payment Error:", error);
-                document.getElementById("result-message").textContent = `Error capturing PayPal payment for $${price}.`;
+                //document.getElementById("result-message").textContent = `Error capturing PayPal payment for $${price}.`;
+                Swal.fire({
+                    title: "Capture Payment Error",
+                    text: `Error capturing PayPal payment for $${price}.`,
+                    icon: "error",
+                    confirmButtonText: "OK"
+                });                
             });
         },
            
