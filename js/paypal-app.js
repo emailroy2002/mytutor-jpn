@@ -96,8 +96,8 @@ document.querySelectorAll("[id^='paypalcc-button-']").forEach(button => {
                 if (data.status === "COMPLETED") {
                     //document.getElementById("result-message").textContent = `Payment successful for $${price}!`;
                     Swal.fire({
-                        title: "Payment Successful!",
-                        text: `Payment successful for $${price}.`,
+                        title: "Credit Card Payment Successful!",
+                        text: `Credit Card Payment successful for $${price}.`,
                         icon: "success",
                         confirmButtonText: "OK"
                     });                    
@@ -107,10 +107,10 @@ document.querySelectorAll("[id^='paypalcc-button-']").forEach(button => {
             })
             .catch(error => {
                 console.error("Capture Payment Error:", error);
-                //document.getElementById("result-message").textContent = `Error capturing PayPal payment for $${price}.`;
+                //document.getElementById("result-message").textContent = `Error capturing Credit Card  payment for $${price}.`;
                 Swal.fire({
                     title: "Capture Payment Error",
-                    text: `Error capturing PayPal payment for $${price}.`,
+                    text: `Error capturing Credit Card payment for $${price}.`,
                     icon: "error",
                     confirmButtonText: "OK"
                 });                
