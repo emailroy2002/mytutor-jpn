@@ -119,3 +119,6 @@ document.querySelectorAll("[id^='paypalcc-button-']").forEach(button => {
            
     }).render(`#${button.id}`);
 });
+
+
+
