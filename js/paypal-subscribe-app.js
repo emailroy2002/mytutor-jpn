@@ -25,12 +25,24 @@ document.querySelectorAll("[id^='paypal-subscribe-button-']").forEach(button => 
             });
         },
         onApprove: function (data, actions) {
+
+
+            // Send subscription success message to the parent window
+            window.parent.postMessage(
+            {
+                type: "subscription-success",
+                subscriptionID: data.subscriptionID,
+            },
+            "*" // Change "https://www.mytutor-jpn.com/" to your domain for security on live
+            ); 
+
+            /*
             Swal.fire({
                 title: "Subscription Successful!",
                 text: `You have successfully subscribed. Subscription ID: ${data.subscriptionID}`,
                 icon: "success",
                 confirmButtonText: "OK"
-            });
+            });*/
 
             /*
             // Send subscription ID to server

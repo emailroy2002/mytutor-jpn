@@ -19,8 +19,8 @@
 <script type="text/javascript" src="js/imgrollover.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/ddaccordion.js"></script>
-
-
+<!-- sweet popup alert-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
 ddaccordion.init({
 	headerclass: "dd_link",
@@ -117,7 +117,7 @@ Math.floor(new Date().getTime() / 86400);
 
 				<div id="result-message"></div>
 
-              
+
 				<div class="service02">
 					<h4><b class="no">30</b>ポイント <b class="price"><span>23,800</span>円（税込）</b><span class="waku">一日複数予約可能</span></h4>
 					<div class="box">
@@ -137,7 +137,10 @@ Math.floor(new Date().getTime() / 86400);
 						</ul>
 						
 					</div>
-				</div>			
+				</div>
+
+
+				
 
 
 				<div class="service02">
@@ -199,12 +202,6 @@ Math.floor(new Date().getTime() / 86400);
 						</ul>
 					</div>
 				</div>
-                
-
-
-          
-
-             
 				
 			
 				<!--********** 月額制料金プラン **********-->
@@ -214,7 +211,20 @@ Math.floor(new Date().getTime() / 86400);
 				<p class="attention nm">●PayPal, クレジットカード(VISA､Master､JCB)がご利用ただけます。<br />ただし、クレジットカードはPCからお手続きをお願いします。</p>
 				<p class="attention nm">●必要な月だけポイントを追加することができます。</p>
 				<p class="attention">●月途中からでもご利用可能です。6日以降のお申込みの場合、初月と最終月でポイントが割り振りされます。</p>
+
+				<p class="cen">		
+					<a href="service-monthly.html">
+					<button style="background-color: #ffc439; color: black; padding: 10px 20px; border: none; 
+							border-radius: 15px; cursor: pointer; font-size: 12px; font-weight: bold; margin-bottom: 35px;">
+						月額料金についてはここをクリックしてください
+					</button>
+				</a>
+				</p>
+
 				
+
+
+				<!--
 				<p class="cen"><a href="#notice_month">月額制プラン ご留意点</a></p>
 
 				<div class="service01">
@@ -225,17 +235,14 @@ Math.floor(new Date().getTime() / 86400);
 						</div>
 						<ul>
 							<li>規約に同意の上paypalでお支払い<br /></li>
-
                             <div>
-                                <iframe id="subscribe-frame" src="paypal-forms/subscribe.php?price=6980&plan-id=P-1PA0458901993894CM7DOVDQ" style="width: 100%; height: 80px; border: none;"></iframe>
-                            </div>
-                            
+                                <div id="paypal-subscribe-button-6980" data-plan-price="6980" data-plan-id="P-1PA0458901993894CM7DOVDQ" style="margin-top:12px; margin-bottom:7px"></div>                              
+                            </div>							
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
 				</div>
 				
-              
 				<div class="service02">
 					<h4>毎月<b class="no">12</b>回コース <b class="price"><span>8,980</span>円（税込）</b><span class="waku">一日複数予約可能</span></h4>
 					<div class="box">
@@ -244,15 +251,13 @@ Math.floor(new Date().getTime() / 86400);
 						</div>
 						<ul>
 							<li>規約に同意の上paypalでお支払い</li>
-							<div>
-                                <iframe id="subscribe-frame" src="paypal-forms/subscribe.php?price=8980&plan-id=P-8MC092417M473704AM7DOZVA" style="width: 100%; height: 80px; border: none;"></iframe>
-                            </div>
-                                                     
+                            <div>
+                                <div id="paypal-subscribe-button-8980" data-plan-price="8980" data-plan-id="P-8MC092417M473704AM7DOZVA" style="margin-bottom:7px"></div>                                   
+                            </div>                            
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
 				</div>
-
 				
 				<div class="service02">
 					<h4>毎月<b class="no">16</b>回コース <b class="price"><span>10,980</span>円（税込）</b><span class="waku">一日複数予約可能</span></h4>
@@ -262,10 +267,9 @@ Math.floor(new Date().getTime() / 86400);
 						</div>
 						<ul>
 							<li>規約に同意の上paypalでお支払い</li>
-							<div>
-                                <iframe id="subscribe-frame" src="paypal-forms/subscribe.php?price=10980&plan-id=P-10U68481PP335750KM7DPGQA" style="width: 100%; height: 80px; border: none;"></iframe>
-                            </div>							
-                                                
+                            <div>
+                                <div id="paypal-subscribe-button-10980" data-plan-price="10980" data-plan-id="P-10U68481PP335750KM7DPGQA" style="margin-bottom:7px"></div>                                   
+                            </div>                            
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -279,9 +283,9 @@ Math.floor(new Date().getTime() / 86400);
 						</div>
 						<ul>
 							<li>規約に同意の上paypalでお支払い</li>
-							<div>
-                                <iframe id="subscribe-frame" src="paypal-forms/subscribe.php?price=12980&plan-id=P-3XS68617TC7460142M7DPGQA" style="width: 100%; height: 80px; border: none;"></iframe>
-                            </div>
+                            <div>
+                                <div id="paypal-subscribe-button-12980" data-plan-price="12980" data-plan-id="P-3XS68617TC7460142M7DPGQA" style="margin-bottom:7px"></div>                                   
+                            </div>                              
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
@@ -295,9 +299,6 @@ Math.floor(new Date().getTime() / 86400);
 						</div>
 						<ul>
 							<li>規約に同意の上paypalでお支払い</li>
-							<div>
-                                <iframe id="subscribe-frame" src="paypal-forms/subscribe.php?price=19980&plan-id=P-418781999U067851FM7DPGQI" style="width: 100%; height: 80px; border: none;"></iframe>
-                            </div>
                             <div>
                                 <div id="paypal-subscribe-button-19980" data-plan-price="19980" data-plan-id="P-418781999U067851FM7DPGQI" style="margin-bottom:7px"></div>                                   
                             </div>                             
@@ -305,12 +306,11 @@ Math.floor(new Date().getTime() / 86400);
 						</ul>
 					</div>
 				</div>
-				
+				-->
 
-			
+				<!--********** 「月額制プラン」追加ポイント **********-->
+				<!--
 				<h3 class="title_sub" style="font-size: 170%">月額制プラン 追加ポイント<span class="fs">（有効期限：お支払い月のみご利用できます）</span></h3>
-
-
 				<div class="service02">
 					<h4><b class="no w1">1</b>ポイント <b class="price"><span>980</span>円（税込）</b><span class="waku">一日複数予約可能</span></h4>
 					<div class="box">
@@ -320,14 +320,12 @@ Math.floor(new Date().getTime() / 86400);
 						<ul>
 							<li>規約に同意の上paypalでお支払い</li>
                             <div>
-								<div id="paypal-button-980" data-price="980" style="margin-top:12px; margin-bottom:7px"></div>                                
+                                <div id="paypal-subscribe-button-980" data-plan-price="980" data-plan-id="P-1KJ38852DR361722CM7DPGQI" style="margin-bottom:7px"></div>                                   
                             </div>                              
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
 					</div>
 				</div>
-
-
 				<div class="service02">
 					<h4><b class="no w1">2</b>ポイント <b class="price"><span>1,800</span>円（税込）</b><span class="waku">一日複数予約可能</span></h4>
 					<div class="box">
@@ -337,7 +335,7 @@ Math.floor(new Date().getTime() / 86400);
 						<ul>
 							<li>規約に同意の上paypalでお支払い</li>
                             <div>
-								<div id="paypal-button-1800" data-price="1800" style="margin-top:12px; margin-bottom:7px"></div>                                                                
+                                <div id="paypal-subscribe-button-1800" data-plan-price="1800" data-plan-id="P-0VP11961YX6201515M7DPGQQ" style="margin-bottom:7px"></div>                                   
                             </div>                              
 							<li class="red"><a href="pdf/riyoukiyaku.pdf?202409" target="_blank">利用規約</a></li>
 						</ul>
@@ -359,7 +357,7 @@ Math.floor(new Date().getTime() / 86400);
 				</div>
 			</div>
 			<br /><br />
-			
+			-->
 
 	
 			<div id="point">
@@ -525,28 +523,16 @@ ytag({
 
 
 
-<!-- sweet popup alert-->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://www.paypal.com/sdk/js?client-id=ATYj-7ZzewIea9u9_RULBGM3Esdwjd-4bIx0BY0BSJ43iSPzU9BLwwMXkDmwlRmDqC4mmNAR0ZjEFyEK&currency=JPY&locale=ja_JP&components=buttons,funding-eligibility&enable-funding=card,sepa" 
+
+<script 
+src="https://www.paypal.com/sdk/js?client-id=ATYj-7ZzewIea9u9_RULBGM3Esdwjd-4bIx0BY0BSJ43iSPzU9BLwwMXkDmwlRmDqC4mmNAR0ZjEFyEK&currency=JPY&locale=ja_JP&components=buttons,funding-eligibility&enable-funding=card,sepa" 
 data-sdk-integration-source="developer-studio">
 </script>
-<script src="js/paypal-app.js"></script>
-<script>
-	window.addEventListener("message", function (event) {
-	  // Security check: Ensure the message is from your trusted iframe domain
 
-	  // if (event.origin !== "https://www.mytutor-jpn.com/") return;
-  
-	  if (event.data.type === "subscription-success") {
-		Swal.fire({
-		  title: "Subscription Successful!",
-		  text: `You have successfully subscribed. Subscription ID: ${event.data.subscriptionID}`,
-		  icon: "success",
-		  confirmButtonText: "OK",
-		});
-	  }
-	});
-  </script>
+
+
+
+<script src="js/paypal-app.js"></script>
 
 <style>
     .paypal-button > .paypal-button-label-container {
