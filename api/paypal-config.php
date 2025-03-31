@@ -2,7 +2,7 @@
 /*Live */
 $clientId       = "AWRJ1e0DeWPwtv_1Bx718mtIinkPHE7eNhF-1qSUfanfyXK0Gr8Rf2GhYjBda5pJpg5JWkfCtaGLQXrA";
 $secret         = "EGASxmRicjC-wfXSsI37IZ9ssUmBC9Ms0_J39H3snQeVSJoC_s5qTHTa3Ohh1x7nkiPkaDrwscrZsbJH";
-$url  = "https://api-m.paypal.com";
+$url            = "https://api-m.paypal.com";
 
 
 /* Sandbox*/
