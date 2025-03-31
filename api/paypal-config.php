@@ -1,15 +1,15 @@
 <?php
-/*Live */
-$clientId       = "AWRJ1e0DeWPwtv_1Bx718mtIinkPHE7eNhF-1qSUfanfyXK0Gr8Rf2GhYjBda5pJpg5JWkfCtaGLQXrA";
-$secret         = "EGASxmRicjC-wfXSsI37IZ9ssUmBC9Ms0_J39H3snQeVSJoC_s5qTHTa3Ohh1x7nkiPkaDrwscrZsbJH";
-$url            = "https://api.paypal.com";
 
+$clientId       = "AQPlPq6RIfdLICqE-DH8FWfFpJJpGyrojmLczhGpGfpS1HkSnVghVe4VWqpovlAXPddgiLb4-6lE-PTW";
+$secret         = "EJHdMJFkqaUK9ywvZ1gzZB-XohX8919dMT9lWOLrYh1E5gjyMDF7QHiyK0o_0dfwQ_BR1j2g8-tQ8uRY";
+$url            = "https://api-m.paypal.com";
+$oAuthURL       = "https://api-m.paypal.com/v1/oauth2/token";
 
 /* Sandbox*/
 /*
 $clientId       = "ATYj-7ZzewIea9u9_RULBGM3Esdwjd-4bIx0BY0BSJ43iSPzU9BLwwMXkDmwlRmDqC4mmNAR0ZjEFyEK";
 $secret         = "ECbYtQYtWhHCKtexAro9BuiosHS904UosEZusLwRGccQIxhelClwtZJ-ea4oWgs9g1pCfm9Zhl_M2uNI";
 $url            = "https://api-m.sandbox.paypal.com";
+$oAuthURL       = "https://api-m.sandbox.paypal.com/v1/oauth2/token";
 */
-
 ?>

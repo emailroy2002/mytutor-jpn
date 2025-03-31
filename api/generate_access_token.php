@@ -4,7 +4,7 @@ function getAccessToken() {
     require('paypal-config.php');
 
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "$url/v1/oauth2/token");
+    curl_setopt($ch, CURLOPT_URL, $oAuthURL);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, "grant_type=client_credentials");
@@ -17,13 +17,6 @@ function getAccessToken() {
     curl_close($ch);
 
     $json = json_decode($response);
-
-    
-    return $json->access_token ;
+    return $json->access_token;
 }
-
-
-
-
-
 ?>

@@ -23,6 +23,11 @@ document.querySelectorAll("[id^='paypal-button-']").forEach(button => {
             .then(data => data.orderId);
         },
         onApprove: function (data, actions) {
+
+
+            console.log(data);
+          
+         
             return fetch('api/capture_payment.php', {
                 method: "POST",
                 headers: {
@@ -54,6 +59,8 @@ document.querySelectorAll("[id^='paypal-button-']").forEach(button => {
                     confirmButtonText: "OK"
                 });                  
             });
+          
+           
         },
            
     }).render(`#${button.id}`);
@@ -89,7 +96,7 @@ document.querySelectorAll("[id^='paypalcc-button-']").forEach(button => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ orderID: data.orderID })
+                body: JSON.stringify({ orderID: data.orderId })
             })
             .then(res => res.json())
             .then(data => {
