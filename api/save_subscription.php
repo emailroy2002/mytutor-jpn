@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 // Include database connection
-require_once "config.php";  // Ensure this file connects to your database
+require('paypal-config.php'); // Ensure this file correctly gets your PayPal access token
 
 // Check for POST request
 if ($_SERVER["REQUEST_METHOD"] === "POST") {

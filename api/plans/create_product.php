@@ -1,7 +1,6 @@
 <?php 
 
-require('generate_access_token.php'); // Ensure this file correctly gets your PayPal access token
-
+require('../generate_access_token.php'); // Ensure this file correctly gets your PayPal access token
 
 function createProduct($accessToken) {
     $url = "https://api-m.sandbox.paypal.com/v1/catalogs/products";

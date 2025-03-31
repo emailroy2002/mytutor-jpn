@@ -1,12 +1,16 @@
 <?php
 header('Content-Type: application/json');
 
-require('paypal-config.php');
 
-// Get price from request
+require('paypal-config.php'); // Ensure this file correctly gets your PayPal access token
+
+// Get request body
 $input = json_decode(file_get_contents("php://input"), true);
-$price = $input["price"] ?? "10.00"; // Default to $10 if no price is sent
-
+$orderId = $input["orderID"] ?? null;
+if (!$orderId) {
+    echo json_encode(["error" => "Invalid order ID"]);
+    exit;
+}
 
 // Get access token
 $ch = curl_init();
@@ -24,31 +28,18 @@ if (!$accessToken) {
     exit;
 }
 
-// Create order
-$orderData = [
-    "intent" => "CAPTURE",
-    "purchase_units" => [[
-        "amount" => ["currency_code" => "JPY", "value" => $price]
-    ]]
-];
-
+// Capture payment
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "$url/v2/checkout/orders");
+curl_setopt($ch, CURLOPT_URL, "$url/v2/checkout/orders/$orderId/capture");
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     "Content-Type: application/json",
     "Authorization: Bearer $accessToken"
 ]);
 curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($orderData));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = json_decode(curl_exec($ch), true);
 curl_close($ch);
 
-$orderId = $response["id"] ?? null;
-if (!$orderId) {
-    echo json_encode(["error" => "Failed to create order"]);
-    exit;
-}
-
-echo json_encode(["orderId" => $orderId]);
+$status = $response["status"] ?? "FAILED";
+echo json_encode(["status" => $status]);
 ?>
