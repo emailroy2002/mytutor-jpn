@@ -17,6 +17,13 @@ function getAccessToken() {
     curl_close($ch);
 
     $json = json_decode($response);
-    return $json->access_token;
+
+    
+    return $json->access_token ;
 }
+
+
+
+
+
 ?>
