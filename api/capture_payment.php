@@ -1,7 +1,6 @@
 <?php
 header('Content-Type: application/json');
 
-
 require('paypal-config.php'); // Ensure this file correctly gets your PayPal access token
 
 // Get request body
@@ -13,27 +12,25 @@ if (!$orderId) {
 }
 
 // PayPal API URL (LIVE environment)
-$apiBase = "https://api-m.paypal.com"; 
+$apiBase = "https://api-m.paypal.com";
 
 // Get access token
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "$apiBase/v1/oauth2/token");
-curl_setopt($ch, CURLOPT_HTTPHEADER, ["Accept: application/json", "Accept-Language: en_US"]);
-curl_setopt($ch, CURLOPT_USERPWD, "$clientId:$secret");
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, "grant_type=client_credentials");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$auth = base64_encode("$clientId:$secret");
+$tokenOptions = [
+    'http' => [
+        'method' => 'POST',
+        'header' => "Accept: application/json\r\n" .
+                    "Accept-Language: en_US\r\n" .
+                    "Authorization: Basic $auth\r\n" .
+                    "Content-Type: application/x-www-form-urlencoded\r\n",
+        'content' => "grant_type=client_credentials",
+        'ignore_errors' => true
+    ]
+];
 
-
-$tokenResponse = curl_exec($ch);
-if ($tokenResponse === false) {
-    echo json_encode(["error" => "cURL error: " . curl_error($ch)]);
-    curl_close($ch);
-    exit;
-}
-
+$context = stream_context_create($tokenOptions);
+$tokenResponse = file_get_contents("$apiBase/v1/oauth2/token", false, $context);
 $response = json_decode($tokenResponse, true);
-curl_close($ch);
 
 $accessToken = $response["access_token"] ?? null;
 if (!$accessToken) {
@@ -41,30 +38,25 @@ if (!$accessToken) {
     exit;
 }
 
-
 // Capture payment
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "$apiBase/v2/checkout/orders/$orderId/capture");
-curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    "Content-Type: application/json",
-    "Authorization: Bearer $accessToken"
-]);
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$paymentOptions = [
+    'http' => [
+        'method' => 'POST',
+        'header' => "Content-Type: application/json\r\n" .
+                    "Authorization: Bearer $accessToken\r\n",
+        'content' => '',
+        'ignore_errors' => true
+    ]
+];
 
-$paymentResponse = curl_exec($ch);
-$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
-if ($paymentResponse === false) {
-    echo json_encode(["error" => "cURL error: " . curl_error($ch)]);
-    curl_close($ch);
-    exit;
-}
-
+$context = stream_context_create($paymentOptions);
+$paymentResponse = file_get_contents("$apiBase/v2/checkout/orders/$orderId/capture", false, $context);
 $response = json_decode($paymentResponse, true);
-curl_close($ch);
 
-// Check if PayPal responded with an error
+// Check HTTP response code
+$httpResponseHeader = $http_response_header ?? [];
+$httpCode = (int)explode(' ', $httpResponseHeader[0] ?? 'HTTP/1.1 500')[1];
+
 if ($httpCode >= 400) {
     $error = $response['message'] ?? ($response['error_description'] ?? 'Unknown error');
     echo json_encode(["status" => "FAILED", "error" => $error, "details" => $response]);
@@ -72,7 +64,3 @@ if ($httpCode >= 400) {
     $status = $response["status"] ?? "FAILED";
     echo json_encode(["status" => $status, "details" => $response]);
 }
-
-
-
-?>
